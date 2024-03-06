@@ -1,0 +1,18 @@
+/* CSS Document */
+.commodity_Name {
+font-weight:bold;
+margin-bottom:6px;
+margin-top:14px;
+}
+.commodity_price{
+color:#FF6600;
+font-family:arial;
+font-size:13px;
+font-size-adjust:none;
+font-stretch:normal;
+font-style:normal;
+font-variant:normal;
+font-weight:bold;
+line-height:normal;
+}
+

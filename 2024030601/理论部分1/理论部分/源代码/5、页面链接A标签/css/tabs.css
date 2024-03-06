@@ -1,0 +1,57 @@
+/* CSS Document */
+#BraPanel {
+height:285px;
+width:180px;
+background:url(../images/portal_bg.jpg) no-repeat scroll 0pt;
+font-size:14px;
+margin:-9px 0px 0px 0px;
+}
+
+.glowingtabs{
+float:left;
+width:180px;
+height:50px;
+}
+.glowingtabs img{
+float:left;
+margin-top:5px;
+padding-left:4px;
+border:0px;
+}
+.glowingtabs ul{
+list-style-type: none;
+margin-top:5px;
+margin-left: 5px; /*Left offset of entire tab menu relative to page*/
+padding:0;
+}
+.glowingtabs li{
+display:inline;
+padding:0;
+}
+
+
+.tabcontainer{
+padding-top:2px;
+padding-bottom:5px;
+width:180px; /*width of 2nd level sub menus*/
+height:165px; /*height of 2nd level sub menus. Set to largest's sub menu's height to avoid jittering.*/
+}
+.tabcontent1{
+display:none;
+margin-left:8px;
+}
+.tabcontent2{
+display:none;  
+margin-left:8px;
+}
+
+#tab_foot{
+margin:0px -5px 5px 4px;
+width:180px;
+height:55px;
+}
+#tab_foot img{
+padding-left:4px;
+width:167px;
+height:50px;
+}

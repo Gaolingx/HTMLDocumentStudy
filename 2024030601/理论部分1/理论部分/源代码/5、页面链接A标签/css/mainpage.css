@@ -1,0 +1,104 @@
+/* CSS Document */
+
+body {
+    margin-top:7px;
+	font-family:"宋体",sans-serif;
+	font-size:12px;
+}
+a:link{
+color:#000000;
+}
+a:visited{
+color:#999999;
+}
+a:hover{
+color:#CC0000;
+}
+
+#head{ !头部样式
+	float:left;
+	margin:0px auto 0px auto;
+	width:950px;
+	height:140px;
+}
+#search_form{
+    margin:0px auto 0px auto;
+	padding:1px 0px 1px 0px;
+	width:950px;
+	height:55px;
+}
+.fontcolor_white{
+color:#FFFFFF;
+font-size:12px;
+}
+
+#content{ !中间内容部分样式
+	float:left;
+	margin:0px auto 0px auto;
+	width:950px;
+	/*height:720px; */
+	text-align:left;
+	background-color:#FFFFFF;
+	
+		font-size:12px;
+}
+#content a{ 
+color:#0033FF;
+text-decoration:none;
+}
+
+
+
+#foot a{ 
+color:#0033FF;
+}
+#content a:hover,#foot a:hover{ 
+color:#FF3300;
+}
+.fontcolor_blue{
+color:blue;
+font-size:12px;
+}
+.font_bold{
+	font-size: 16px;
+	font-weight: bold;
+}
+.tableBorder {
+	border-right-width: 2px;
+	border-right-color:#FF9900;
+	border-right-style:dashed;
+	padding-top:10px;
+	padding-left:5px;		
+}
+.tablePad {
+padding-left:10px;		
+}
+
+
+#foot{
+	margin:0px auto 0px auto;
+	width:950px;
+	height:93px;
+	text-align:center;
+}
+
+
+.login_success1 {
+	font-size: 24px;
+	font-weight: bold;
+}
+.login_success2 {font-size: 36px}
+.login_success3 {font-size: 24px}
+
+.register_textBroader
+{
+	border-width:1px;
+	border-style:solid;
+}
+.register_table_line{
+	font-size:14px;
+	line-height:35px;
+	margin-right:5px;
+	text-align:right;
+}
+
