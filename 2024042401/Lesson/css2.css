@@ -1,0 +1,36 @@
+TABLE {text-align:center; font-family:"¡• È"}
+TH { 
+	font-size:24px; 
+	color:#FF0000; 
+	text-align:center;
+	background-color:#B9DCFF
+	}
+.text { 
+		border-width:1px;
+		border-style:solid;  
+	   }
+.picButton{ background-image:url(images/btn.gif);
+   border:0 px;
+   margin: 0px;
+   padding: 0px;
+   height: 26px;
+   width: 99px; 
+   font-size: 14px;	  
+}
+.td { 
+	background-color:#FFC1FF;
+	font-size:14px;
+	border:1px solid gray;
+	text-align:center
+	}
+A { font-size:14px;
+	color:#0000FF;
+	text-decoration:none 
+	}
+A:hover { text-decoration:underline; color:#FF0000}
+.font {
+		font-size:18px;
+		color:#FF86C2; 
+		font-style:italic; 
+		background-color:#F5D378
+	  }
