@@ -1,0 +1,484 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<!-- saved from url=(0043)http://www.dayanmei.com/blog.php/ID_537.htm -->
+<HTML 
+xmlns="http://www.w3.org/1999/xhtml"><HEAD><TITLE>div+css布局实例淘宝分析(二)</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=utf-8"><LINK 
+href="/favicon.ico" type=image/x-icon rel=icon><LINK href="/favicon.ico" 
+type=image/x-icon rel="shortcut icon"><LINK rev=stylesheet media=all 
+href="分析淘宝网的层布局2_files/default.css" type=text/css rel=stylesheet>
+<META content="MSHTML 6.00.3790.4026" name=GENERATOR></HEAD>
+<BODY>
+<DIV id=Top>
+<DIV id=Nav>
+<UL>
+  <LI><A href="http://www.dayanmei.com/">个人日志首页</A> </LI>
+  <LI><A href="http://www.dayanmei.com/blog.php">全部日志</A> </LI>
+  <LI><A href="http://www.dayanmei.com/photo.php">我的相册</A> </LI>
+  <LI><A href="http://www.dayanmei.com/blog.php/BlogID_2.htm">心情日记</A> </LI>
+  <LI><A href="http://www.dayanmei.com/tags.php/k_54ix5oOF">爱情</A> </LI>
+  <LI><A title=qq签名 
+  href="http://www.dayanmei.com/blog.php/BlogID_6.htm">我的QQ签名</A> </LI>
+  <LI><A href="http://www.dayanmei.com/guestbook.php">给我留言</A> </LI>
+  <LI><A title="" href="http://www.dayanmei.com/search.php">在本站搜索</A> 
+</LI></UL></DIV><!-- END Nav --></DIV><!-- End Top -->
+<DIV id=TopBack></DIV>
+<DIV id=Main>
+<DIV id=Right>
+<DIV id=BlogPath>
+<UL>
+  <LI>当前位置<A href="http://www.dayanmei.com/blog.php" 
+  target=_blank>个人日志</A>&gt;&gt;<A 
+  href="http://www.dayanmei.com/blog.php/BlogID_12.htm">div+css布局学习</A> </LI>
+  <LI style="OVERFLOW: hidden">推荐：&nbsp;<A title=黄色小说 
+  href="http://www.dayanmei.com/blog.php/ID_553.htm"><STRONG><FONT 
+  color=#008200>最短的黄色小说</FONT></STRONG></A> | <A title=爱一个人真的有错吗,听歌 
+  href="http://www.dayanmei.com/blog.php/ID_381.htm"><STRONG><FONT 
+  color=#008200>难道爱一个人真的有错吗</FONT></STRONG></A> | <A 
+  href="http://www.dayanmei.com/blog.php/ID_710.htm"><STRONG><FONT 
+  color=#008200>说分手只是为了被挽留？</FONT></STRONG></A> </LI>
+  <LI class=line></LI></UL></DIV>
+<DIV class=HackBox></DIV><!-- google_ad_section_start -->
+<DIV class=MaxImage id=ViewBlog>
+<H1>div+css布局实例淘宝分析(二)</H1>
+<UL>
+  <LI style="MARGIN: 3px 0px 15px; TEXT-ALIGN: left">
+  <SCRIPT type=text/javascript><!--
+google_ad_client = "pub-0711440927094874";
+google_ad_width = 468;
+google_ad_height = 60;
+google_ad_format = "468x60_as";
+google_ad_type = "text_image";
+//2007-06-28: viewblog
+google_ad_channel = "1153131545";
+google_color_border = "FFFFFF";
+google_color_bg = "FFFFFF";
+google_color_link = "008200";
+google_color_text = "000000";
+google_color_url = "008000";
+//-->
+</SCRIPT>
+
+  <SCRIPT src="分析淘宝网的层布局2_files/show_ads.js" type=text/javascript>
+</SCRIPT>
+  </LI>
+  <LI 
+  style="OVERFLOW: hidden">在前面我们分析了淘宝网页的顶部代码,这次我们来分析淘宝网页的导航条,对于刚入门学DIV,CSS布局的朋友来说,不知道从那里下手,我以为从分析优秀 
+  网站的源代码来学习div,css布局是一个不错的方法,这篇div+ 
+  css布局教程是我自己在边分析边学习中总结出来的,如果你要转载请注明出处,另外本人特别声明:本教程只是分析淘宝网站的HTML,CSS源代码,作为 
+  一个教程的例子,达到学习DIV+CSS排版的效果,请勿模仿淘宝,或者仿照淘宝制作网站,由此产生的纠纷和责任自负,谢谢,这是第二篇,淘宝导航条排版 
+  方式<BR><BR>我们还是先来看看网页的实际样式<BR><A href="分析淘宝网的层布局2_files/2.nav.default.gif" 
+  target=_blank><IMG alt=div,css布局实例教程 src="分析淘宝网的层布局2_files/2.nav.default.gif" 
+  border=0></A><BR><BR>我们把它分为两个块(其实是三个块)<BR><A 
+  href="分析淘宝网的层布局2_files/2.nav.view.gif" target=_blank><IMG alt=div,css布局实例教程 
+  src="分析淘宝网的层布局2_files/2.nav.view.gif" 
+  border=0></A><BR><BR>下面是源码的截图,还是采用Head容器,为了方便查看,很多无关的代码我已经省略了<BR><A 
+  href="分析淘宝网的层布局2_files/2.nav.html.gif"><IMG alt=div,css布局实例教程源码 
+  src="分析淘宝网的层布局2_files/2.nav.html.gif" border=0></A><BR>html源码中 
+  div,css分析<BR><BR>1.#Head在上一节中已经说到,text-align:center;是文本居中对齐<BR><SPAN 
+  style="COLOR: rgb(255,0,255)">#Head{</SPAN><BR>&nbsp;&nbsp;&nbsp; 
+  text-align:center;<BR><SPAN 
+  style="COLOR: rgb(255,0,255)">}</SPAN><BR><BR>2.#ChannelMenu定义了宽度为760px,外补丁上下,左右均为0px,文本居中对齐<BR><SPAN 
+  style="COLOR: rgb(255,0,255)">#Head #ChannelMenu{</SPAN><BR>&nbsp;&nbsp;&nbsp; 
+  <SPAN style="COLOR: rgb(0,0,128)">width</SPAN>:760px;<BR>&nbsp;&nbsp;&nbsp; 
+  <SPAN style="COLOR: rgb(0,0,128)">margin</SPAN>:0 auto;<BR>&nbsp;&nbsp;&nbsp; 
+  <SPAN style="COLOR: rgb(0,0,128)">text-align</SPAN>:center;<BR><SPAN 
+  style="COLOR: rgb(255,0,255)">}</SPAN><BR><BR>3.#ChannelMenuItems容器在#ChannelMenu内,但#ChannelMenu没有什么限制,所以直接写在容器#Head下面也 
+  是一样的,当然也可以这样写#Head #ChannelMenu #ChannelMenuItems {}效果是一样的,<BR><SPAN 
+  style="COLOR: rgb(255,0,255)">#Head 
+  #ChannelMenuItems{</SPAN><BR>&nbsp;&nbsp;&nbsp; <SPAN 
+  style="COLOR: rgb(0,0,128)">width</SPAN>:520px;<BR>&nbsp;&nbsp;&nbsp; <SPAN 
+  style="COLOR: rgb(0,0,128)">height</SPAN>:33px;<BR>&nbsp;&nbsp;&nbsp; <SPAN 
+  style="COLOR: rgb(0,0,128)">margin</SPAN>:0 auto;<BR><SPAN 
+  style="COLOR: rgb(255,0,255)">}</SPAN><BR>这里定义的是宽度520px,高度33px,外补丁为0px<BR><BR>4.ul跟#ChannelMenuItems一样,虽然在那些容器内,但他们不对ul限制,所以可以直接写在#Head下面,甚至你可以将前面的#Head去掉<BR><SPAN 
+  style="COLOR: rgb(255,0,255)">#Head ul{</SPAN><BR>&nbsp;&nbsp;&nbsp; <SPAN 
+  style="COLOR: rgb(0,0,128)">list-style-type</SPAN>:none;<BR>&nbsp;&nbsp;&nbsp; 
+  <SPAN style="COLOR: rgb(0,0,128)">margin</SPAN>:0;<BR>&nbsp;&nbsp;&nbsp; <SPAN 
+  style="COLOR: rgb(0,0,128)">padding</SPAN>:0;<BR><SPAN 
+  style="COLOR: rgb(255,0,255)">}</SPAN><BR>这里设定列表样式为 
+  none,即不显示,外补丁,内补丁为0px<BR><BR>5.设定li,在特定的容器#Head #ChannelMenuItems里的样式<BR><SPAN 
+  style="COLOR: rgb(255,0,255)">#Head #ChannelMenuItems 
+  li{</SPAN><BR>&nbsp;&nbsp;&nbsp; <SPAN 
+  style="COLOR: rgb(0,0,128)">float</SPAN>:left;<BR>&nbsp;&nbsp;&nbsp; <SPAN 
+  style="COLOR: rgb(0,0,128)">height</SPAN>:33px;<BR>&nbsp;&nbsp;&nbsp; <SPAN 
+  style="COLOR: rgb(0,0,128)">margin-right</SPAN>:1px;<BR><SPAN 
+  style="COLOR: rgb(255,0,255)">}</SPAN><BR>从左边浮动,高度为33px,右补丁为1px<BR><BR>6.设定链接样式<BR><SPAN 
+  style="COLOR: rgb(255,0,255)">#Head #ChannelMenuItems 
+  a{</SPAN><BR>&nbsp;&nbsp;&nbsp; <SPAN 
+  style="COLOR: rgb(0,0,128)">display</SPAN>:block;<BR>&nbsp;&nbsp;&nbsp; <SPAN 
+  style="COLOR: rgb(0,0,128)">float</SPAN>:left;<BR>&nbsp;&nbsp;&nbsp; <SPAN 
+  style="COLOR: rgb(0,0,128)">height</SPAN>:33px;<BR>&nbsp;&nbsp;&nbsp; <SPAN 
+  style="COLOR: rgb(0,0,128)">background</SPAN>:transparent url(images/cm_l.gif) 
+  left top no-repeat;<BR>&nbsp;&nbsp;&nbsp; <SPAN 
+  style="COLOR: rgb(0,0,128)">text-decoration</SPAN>:none;<BR><SPAN 
+  style="COLOR: rgb(255,0,255)">}</SPAN><BR>块状方式显示,左浮动,高度为33px,背景左上排列,不重复,此设定对其下面的 
+  a:link,a:visited,a:hover,a:active均起作用<BR><BR>7.通过添加span属性,用于显示右边图片背景<BR><SPAN 
+  style="COLOR: rgb(255,0,255)">#Head #ChannelMenuItems a 
+  span{</SPAN><BR>&nbsp;&nbsp;&nbsp; <SPAN 
+  style="COLOR: rgb(0,0,128)">display</SPAN>:block;<BR>&nbsp;&nbsp;&nbsp; <SPAN 
+  style="COLOR: rgb(0,0,128)">float</SPAN>:left;<BR>&nbsp;&nbsp;&nbsp; <SPAN 
+  style="COLOR: rgb(0,0,128)">height</SPAN>:33px!important;<BR>&nbsp;&nbsp;&nbsp; 
+  <SPAN style="COLOR: rgb(0,0,128)">height</SPAN>: 22px;<BR>&nbsp;&nbsp;&nbsp; 
+  <SPAN style="COLOR: rgb(0,0,128)">height</SPAN> /*ie55*/: 
+  33px;<BR>&nbsp;&nbsp;&nbsp; <SPAN 
+  style="COLOR: rgb(0,0,128)">padding</SPAN>:11px 12px 0;<BR>&nbsp;&nbsp;&nbsp; 
+  <SPAN style="COLOR: rgb(0,0,128)">background</SPAN>:transparent 
+  url(images/cm_r.gif) right top no-repeat;<BR>&nbsp;&nbsp;&nbsp; <SPAN 
+  style="COLOR: rgb(0,0,128)">text-align</SPAN>:center;<BR>&nbsp;&nbsp;&nbsp; 
+  <SPAN style="COLOR: rgb(0,0,128)">color</SPAN>:#000;<BR>&nbsp;&nbsp;&nbsp; 
+  <SPAN style="COLOR: rgb(0,0,128)">font-size</SPAN>: 14px;<BR><SPAN 
+  style="COLOR: rgb(255,0,255)">}</SPAN><BR>以块状方式显示,左浮动,高度为33px(我也有些糊涂了,怎么三个height?),padding有三个参数时,我们回忆一下:第一个参数是上,第二 
+  个参数是左右,第三个参数是下,说明上内补丁为11px,左右内补丁为12px,背景为右上不重复排列,文字居中颜色为#000,大小为14px<BR>我们再来看看左边的背景图和右边的背景图<BR>左边: 
+  <IMG alt="" src="分析淘宝网的层布局2_files/cm_l.gif" align=middle border=0><BR>右边:<IMG 
+  alt="" src="分析淘宝网的层布局2_files/cm_r.gif" align=middle 
+  border=0><BR>上面的好处就是两个背景图片就可以适应不同宽度的菜单列表,因为左边具有适当的长<BR><BR>8.激活时样式<BR><SPAN 
+  style="COLOR: rgb(255,0,255)">#Head #ChannelMenuItems 
+  a:hover{</SPAN><BR>&nbsp;&nbsp;&nbsp; <SPAN 
+  style="COLOR: rgb(0,0,128)">background</SPAN>:transparent 
+  url(images/cm_hov_l.gif) left -3px no-repeat;<BR><SPAN 
+  style="COLOR: rgb(255,0,255)">}<BR></SPAN>当鼠标放上时为了达到效果,将左背景图向右移动3px(差三个象素宽度左对齐),并且背景图片透明,不重复<SPAN 
+  style="COLOR: rgb(255,0,255)"><BR></SPAN><SPAN 
+  style="COLOR: rgb(255,0,255)">#Head #ChannelMenuItems a:hover 
+  span{</SPAN><BR>&nbsp;&nbsp;&nbsp; <SPAN 
+  style="COLOR: rgb(0,0,128)">background</SPAN>:transparent 
+  url(images/cm_hov_r.gif) right -3px no-repeat;<BR><SPAN 
+  style="COLOR: rgb(255,0,255)">}</SPAN><BR><BR>9.当列表有设置ID时以最后设置的id为准<BR><SPAN 
+  style="COLOR: rgb(255,0,255)">body.CurHome ul#ChannelMenuItems li#MenuHome a, 
+  body.CurHome ul#ChannelMenuItems li#MenuHome 
+  a:hover{</SPAN><BR>background:url(http://pics.taobao.com/bao/album/sys/misc/cm_act_l.gif) 
+  left top no-repeat;<BR><SPAN style="COLOR: rgb(255,0,255)">}</SPAN><BR><SPAN 
+  style="COLOR: rgb(255,0,255)">body.CurHome ul#ChannelMenuItems li#MenuHome a 
+  span, body.CurHome ul#ChannelMenuItems li#MenuHome a:hover 
+  span{</SPAN><BR>background:transparent 
+  url(http://pics.taobao.com/bao/album/sys/misc/cm_act_r.gif) right top 
+  no-repeat;<BR>font-weight:bold;<BR>color:#FFF;<BR><SPAN 
+  style="COLOR: rgb(255,0,255)">}</SPAN><BR><BR>10.#SearchBox<BR><SPAN 
+  style="COLOR: rgb(255,0,255)">#Head #SearchBox{</SPAN><BR>&nbsp;&nbsp;&nbsp; 
+  <SPAN 
+  style="COLOR: rgb(0,0,128)">text-align</SPAN>:left;<BR>&nbsp;&nbsp;&nbsp; 
+  <SPAN style="COLOR: rgb(0,0,128)">height</SPAN>:58px;<BR>&nbsp;&nbsp;&nbsp; 
+  <SPAN style="COLOR: rgb(0,0,128)">background</SPAN>:transparent 
+  url(images/searchbox_tab_left.gif) 0 0 no-repeat;<BR>&nbsp;&nbsp;&nbsp; <SPAN 
+  style="COLOR: rgb(0,0,128)">background-color</SPAN>:#FF9000;<BR><SPAN 
+  style="COLOR: rgb(255,0,255)">}</SPAN><BR><BR>11.#Head #SearchBoxTop<BR><SPAN 
+  style="COLOR: rgb(255,0,255)">#Head 
+  #SearchBoxTop{</SPAN><BR>&nbsp;&nbsp;&nbsp; <SPAN 
+  style="COLOR: rgb(0,0,128)">width</SPAN>: 740px;<BR>&nbsp;&nbsp;&nbsp; <SPAN 
+  style="COLOR: rgb(0,0,128)">float</SPAN>: left;<BR>&nbsp;&nbsp;&nbsp; <SPAN 
+  style="COLOR: rgb(0,0,128)">height</SPAN>:34px;<BR>&nbsp;&nbsp;&nbsp; <SPAN 
+  style="COLOR: rgb(0,0,128)">overflow</SPAN>: hidden;<BR><SPAN 
+  style="COLOR: rgb(255,0,255)">}</SPAN><BR><SPAN 
+  style="COLOR: rgb(255,0,255)">overflow</SPAN> : visible | auto | <SPAN 
+  style="COLOR: rgb(0,0,128)">hidden</SPAN> | scroll <BR>取值：<BR>visible&nbsp; : 
+  默认值。不剪切内容也不添加滚动条。假如显式声明此默认值，对象将以包含对象的 window 或 frame 的尺寸裁切。并且 clip 属性设置将失效 
+  <BR>auto&nbsp; : 在必需时对象内容才会被裁切或显示滚动条 <BR>hidden&nbsp; : 不显示超过对象尺寸的内容 
+  <BR>scroll&nbsp; : 总是显示滚动条 <BR><BR>12.#SearchForm<BR><SPAN 
+  style="COLOR: rgb(255,0,255)">#Head #SearchForm{</SPAN><BR>&nbsp;&nbsp;&nbsp; 
+  <SPAN style="COLOR: rgb(0,0,128)">float</SPAN>:left;<BR>&nbsp;&nbsp;&nbsp; 
+  <SPAN style="COLOR: rgb(0,0,128)">width</SPAN>:740px;<BR>&nbsp;&nbsp;&nbsp; 
+  <SPAN style="COLOR: rgb(0,0,128)">height</SPAN>:34px;<BR><SPAN 
+  style="COLOR: rgb(255,0,255)">}</SPAN><BR><BR>13.<BR><SPAN 
+  style="COLOR: rgb(255,0,255)">#Head #HotKeywords{</SPAN><BR>&nbsp;&nbsp;&nbsp; 
+  float:left;<BR>&nbsp;&nbsp;&nbsp; text-indent:8px;<BR>&nbsp;&nbsp;&nbsp; 
+  width:752px;<BR>&nbsp;&nbsp;&nbsp; height:24px;<BR>&nbsp;&nbsp;&nbsp; 
+  margin-left:3px;<BR>&nbsp;&nbsp;&nbsp; overflow:hidden;<BR>&nbsp;&nbsp;&nbsp; 
+  background:transparent url(images/searchbox_tab_center.gif) 0 0 
+  repeat-x;<BR><SPAN 
+  style="COLOR: rgb(255,0,255)">}</SPAN><BR><BR>剩下表单那些就不分析了,基本差不多<BR><BR>总结一下:<BR><BR>1.可以通过a 
+  span使用两张背景图片拼合成背景<BR><BR>2.使用相对位置可以使层重叠,比如<BR>&lt;li id="MenuInfo" 
+  style="position:relative;"&gt;&lt;a 
+  href=""&gt;&lt;span&gt;资讯&lt;/span&gt;&lt;img width="45" height="34" alt="" 
+  src="http://pics.taobao.com/2k6/mkt/new_mall_pop2.gif" 
+  style="position:absolute;top:-10px;left:40px;" 
+  /&gt;&lt;/a&gt;&lt;/li&gt;<BR><BR>本节完,具体的知识,参数还需要再熟悉 </LI>
+  <LI style="LINE-HEIGHT: 30px; HEIGHT: 30px">上一主题: <A 
+  href="http://www.dayanmei.com/blog.php/ID_536.htm">div+css布局实例淘宝分析(一)</A> 
+  下一主题: <A href="http://www.dayanmei.com/blog.php/ID_538.htm">google 
+  sitemap在线生成工具</A> </LI>
+  <LI>
+  <SCRIPT type=text/javascript><!--
+google_ad_client = "pub-0711440927094874";
+google_ad_width = 468;
+google_ad_height = 15;
+google_ad_format = "468x15_0ads_al";
+//2007-10-02: 链接单元
+google_ad_channel = "7636091627";
+google_color_border = "FFFFFF";
+google_color_bg = "FFFFFF";
+google_color_link = "008200";
+google_color_text = "000000";
+google_color_url = "008000";
+//-->
+</SCRIPT>
+
+  <SCRIPT src="分析淘宝网的层布局2_files/show_ads.js" type=text/javascript>
+</SCRIPT>
+  </LI>
+  <LI>查找相关文章:<A 
+  href="http://www.dayanmei.com/tags.php/k_ZGl2K2Nzc+W4g+WxgOWunuS+iw==">div+css布局实例</A> 
+  <A href="http://www.dayanmei.com/tags.php/k_Y3Nz">css</A> <A 
+  href="http://www.dayanmei.com/tags.php/k_ZGl2K2Nzc+W4g+WxgOWFpemXqA==">div+css布局入门</A> 
+  <A 
+  href="http://www.dayanmei.com/tags.php/k_ZGl2K2Nzc+W4g+WxgOaVmeeoiw==">div+css布局教程</A> 
+  <A 
+  href="http://www.dayanmei.com/tags.php/k_ZGl2K2Nzc+ekuuS+iw==">div+css示例</A> 
+  </LI>
+  <LI class=line></LI>
+  <LI style="OVERFLOW: hidden; LINE-HEIGHT: 30px"><IMG title="" alt="" 
+  src="分析淘宝网的层布局2_files/fangda.gif" align=middle> 生活小贴士：<A title="" 
+  href="http://tips.dayanmei.com/tips/MjQ3NC5odG0=" 
+  target=_blank>含VC多的水果你选对了吗</A> </LI></UL></DIV><!-- google_ad_section_end -->
+<DIV class=HackBox></DIV>
+<DIV id=TuiJian>
+<DIV class=tuijian>
+<UL>
+  <LI>你可能对这些文章感兴趣 
+  <LI><A title="" 
+  href="http://www.dayanmei.com/blog.php/ID_712.htm">用css实现图片与文字底边对齐</A> 
+  <LI><A title="" 
+  href="http://www.dayanmei.com/blog.php/ID_705.htm">怎样让英文自动换行且不断词</A> 
+  <LI><A title="" 
+  href="http://www.dayanmei.com/blog.php/ID_683.htm">css用import还是link好?区别是什么</A> 
+
+  <LI><A title="" href="http://www.dayanmei.com/blog.php/ID_682.htm">淘宝的艺术</A> 
+  <LI><A title="" 
+  href="http://www.dayanmei.com/blog.php/ID_576.htm">图片太大导致div排版网页撑破变形</A> 
+  <LI><A title="" 
+  href="http://www.dayanmei.com/blog.php/ID_567.htm">单行文字两端对齐</A> 
+  <LI><A title="" 
+  href="http://www.dayanmei.com/blog.php/ID_566.htm">父DIV不能适应子DIV高度的解决办法</A> 
+  <LI><A title="" 
+  href="http://www.dayanmei.com/blog.php/ID_561.htm">CSS伪类制作鼠标滑动链接特效</A> 
+</LI></UL></DIV>
+<DIV class=tuijian>
+<UL>
+  <LI>随机文章推荐: 
+  <LI><A href="http://www.dayanmei.com/blog.php/ID_159.htm" 
+  target=_blank>夫妻间的一封信(强悍!)</A>
+  <LI><A href="http://www.dayanmei.com/blog.php/ID_618.htm" 
+  target=_blank>可输入繁体字的紫光拼音输入法</A>
+  <LI><A href="http://www.dayanmei.com/blog.php/ID_508.htm" 
+  target=_blank>当人有目标时活得才有意义</A>
+  <LI><A href="http://www.dayanmei.com/blog.php/ID_721.htm" 
+  target=_blank>php敏感关键字判断</A>
+  <LI><A href="http://www.dayanmei.com/blog.php/ID_346.htm" 
+  target=_blank>flash幻灯片效果特效制作</A>
+  <LI><A href="http://www.dayanmei.com/blog.php/ID_514.htm" 
+  target=_blank>大眼妹,本站域名的来历</A>
+  <LI><A href="http://www.dayanmei.com/blog.php/ID_321.htm" 
+  target=_blank>怎样删除web迅雷</A>
+  <LI><A href="http://www.dayanmei.com/blog.php/ID_581.htm" 
+  target=_blank>google有点强</A> </LI></UL></DIV></DIV>
+<DIV class=HackBox></DIV>
+<DIV id=Pages></DIV>
+<DIV class=HackBox></DIV>
+<DIV id=LeaveWords>
+<FORM id=form1 name=form1 
+action=http://www.dayanmei.com/comment.php?Action=Add&amp;SortID=1&amp;ID=537 
+method=post encType=multipart/form-data>
+<UL>
+  <LI>评论需要审核才能显示, 请不要重复提交,谢谢<INPUT type=hidden 
+  value=http://www.dayanmei.com/blog.php/ID_537.htm name=Url> </LI>
+  <LI>*您的大名* </LI>
+  <LI><INPUT id=UserName maxLength=20 name=UserName> </LI>
+  <LI>您的电子邮件(我们将保密并不显示在页面上,将作为联系你的方式) </LI>
+  <LI><INPUT id=UserEmail maxLength=100 size=25 name=UserEmail> </LI>
+  <LI>博客/或者您的主页(很抱歉,我们暂时关闭了这个功能) </LI>
+  <LI><INPUT id=UserName3 maxLength=100 size=25 name=UserBlog> </LI>
+  <LI>*评论内容*：(不支持HTML 不支持UBB) </LI>
+  <LI><TEXTAREA id=Words name=Words rows=9 cols=50></TEXTAREA> </LI>
+  <LI>验证码(请填写左侧数字的计算结果) </LI>
+  <LI><IMG height=30 alt="" src="分析淘宝网的层布局2_files/mark.png" width=80 
+  align=middle> <INPUT id=MarkInput maxLength=5 size=10 name=MarkInput> </LI>
+  <LI><INPUT type=submit value=提交 name=Submit> </LI></UL></FORM></DIV></DIV>
+<DIV id=Left>
+<DIV id=Note>
+<UL>
+  <LI>不忘国耻 警钟长鸣</LI>
+  <LI>支持国产 强我中华</LI></UL></DIV>
+<DIV id=BlogSorts>
+<UL>
+  <LI style="MARGIN-TOP: 10px"><!-- SiteSearch Google -->
+  <FORM action=http://www.google.cn/custom method=get target=google_window>
+  <TABLE bgColor=#ffffff border=0>
+    <TBODY>
+    <TR>
+      <TD vAlign=top noWrap align=left height=32><A 
+        href="http://www.google.com/"><IMG alt=Google 
+        src="分析淘宝网的层布局2_files/Logo_25wht.gif" align=middle border=0></IMG></A> 
+        <BR><INPUT type=hidden value=www.dayanmei.com name=domains></INPUT> 
+        <LABEL style="DISPLAY: none" for=sbi>输入您的搜索字词</LABEL> <INPUT id=sbi 
+        maxLength=255 size=23 name=q></INPUT> </TD></TR>
+    <TR>
+      <TD noWrap>
+        <TABLE>
+          <TBODY>
+          <TR>
+            <TD><INPUT id=ss0 type=radio value="" name=sitesearch></INPUT> 
+              <LABEL title=搜索网络 for=ss0><FONT color=#000000 
+              size=-1>Web</FONT></LABEL></TD>
+            <TD><INPUT id=ss1 type=radio CHECKED value=www.dayanmei.com 
+              name=sitesearch></INPUT> <LABEL title="搜索 www.dayanmei.com" 
+              for=ss1><FONT color=#000000 
+          size=-1>dayanmei.com</FONT></LABEL></TD></TR></TBODY></TABLE><LABEL 
+        style="DISPLAY: none" for=sbb>提交搜索表单</LABEL> <INPUT id=sbb type=submit value=搜索 name=sa></INPUT> <INPUT type=hidden 
+        value=pub-0711440927094874 name=client></INPUT> <INPUT type=hidden 
+        value=1 name=forid></INPUT> <INPUT type=hidden value=2026510353 
+        name=channel></INPUT> <INPUT type=hidden value=UTF-8 name=ie></INPUT> 
+        <INPUT type=hidden value=UTF-8 name=oe></INPUT> <INPUT type=hidden 
+        value=0001 name=flav></INPUT> <INPUT type=hidden value=CS8D8nnDfKO14F8H 
+        name=sig></INPUT> <INPUT type=hidden 
+        value=GALT:#008000;GL:1;DIV:#FFFFFF;VLC:663399;AH:center;BGC:FFFFFF;LBGC:FFFFFF;ALC:0000FF;LC:0000FF;T:000000;GFNT:0000FF;GIMP:0000FF;LH:50;LW:130;L:http://www.google.com/intl/zh-CN_ALL/images/logo.gif;S:http://www.google.com;FORID:1 
+        name=cof></INPUT> <INPUT type=hidden value=zh_CN name=hl></INPUT> 
+    </TD></TR></TBODY></TABLE></FORM><!-- SiteSearch Google --></LI></UL>
+<UL>
+  <LI class=Title>日志列表 </LI>
+  <LI><A href="http://www.dayanmei.com/blog.php/BlogID_2.htm">心情日记</A> <A 
+  href="http://www.dayanmei.com/feed.php?id=2"><IMG 
+  src="分析淘宝网的层布局2_files/rss.png"></A> (131)</LI>
+  <LI><A href="http://www.dayanmei.com/blog.php/BlogID_3.htm">学习笔记</A> <A 
+  href="http://www.dayanmei.com/feed.php?id=3"><IMG 
+  src="分析淘宝网的层布局2_files/rss.png"></A> (90)</LI>
+  <LI><A href="http://www.dayanmei.com/blog.php/BlogID_4.htm">精彩文摘</A> <A 
+  href="http://www.dayanmei.com/feed.php?id=4"><IMG 
+  src="分析淘宝网的层布局2_files/rss.png"></A> (143)</LI>
+  <LI><A href="http://www.dayanmei.com/blog.php/BlogID_5.htm">杂七杂八</A> <A 
+  href="http://www.dayanmei.com/feed.php?id=5"><IMG 
+  src="分析淘宝网的层布局2_files/rss.png"></A> (35)</LI>
+  <LI><A href="http://www.dayanmei.com/blog.php/BlogID_6.htm">我的QQ签名</A> <A 
+  href="http://www.dayanmei.com/feed.php?id=6"><IMG 
+  src="分析淘宝网的层布局2_files/rss.png"></A> (67)</LI>
+  <LI><A href="http://www.dayanmei.com/blog.php/BlogID_7.htm">笑话</A> <A 
+  href="http://www.dayanmei.com/feed.php?id=7"><IMG 
+  src="分析淘宝网的层布局2_files/rss.png"></A> (18)</LI>
+  <LI><A href="http://www.dayanmei.com/blog.php/BlogID_8.htm">听歌</A> <A 
+  href="http://www.dayanmei.com/feed.php?id=8"><IMG 
+  src="分析淘宝网的层布局2_files/rss.png"></A> (5)</LI>
+  <LI><A href="http://www.dayanmei.com/blog.php/BlogID_9.htm">php相关</A> <A 
+  href="http://www.dayanmei.com/feed.php?id=9"><IMG 
+  src="分析淘宝网的层布局2_files/rss.png"></A> (50)</LI>
+  <LI><A href="http://www.dayanmei.com/blog.php/BlogID_10.htm">mysql数据库</A> <A 
+  href="http://www.dayanmei.com/feed.php?id=10"><IMG 
+  src="分析淘宝网的层布局2_files/rss.png"></A> (14)</LI>
+  <LI><A href="http://www.dayanmei.com/blog.php/BlogID_11.htm">看图不说话</A> <A 
+  href="http://www.dayanmei.com/feed.php?id=11"><IMG 
+  src="分析淘宝网的层布局2_files/rss.png"></A> (4)</LI>
+  <LI><A href="http://www.dayanmei.com/blog.php/BlogID_12.htm">div+css布局学习</A> 
+  <A href="http://www.dayanmei.com/feed.php?id=12"><IMG 
+  src="分析淘宝网的层布局2_files/rss.png"></A> (21) </LI></UL></DIV>
+<DIV id=AlbumSorts>
+<UL>
+  <LI class=Title>相册列表 </LI>
+  <LI><A href="http://www.dayanmei.com/photo.php/AlbumSortID_2.htm">广州一日游</A> 
+  (20)</LI>
+  <LI><A href="http://www.dayanmei.com/photo.php/AlbumSortID_3.htm">越秀公园</A> 
+  (10)</LI>
+  <LI><A href="http://www.dayanmei.com/photo.php/AlbumSortID_4.htm">江山多娇风景画</A> 
+  (13)</LI>
+  <LI><A href="http://www.dayanmei.com/photo.php/AlbumSortID_5.htm">靓仔靓女</A> 
+  (14)</LI>
+  <LI><A href="http://www.dayanmei.com/photo.php/AlbumSortID_6.htm">其他杂项</A> 
+  (5)</LI>
+  <LI><A href="http://www.dayanmei.com/photo.php/AlbumSortID_7.htm">久安背</A> (5) 
+  </LI></UL></DIV>
+<DIV id=FriendlyLink>
+<UL>
+  <LI class=Title>友情链接 </LI>
+  <LI><A title=专业生产鞋扣,胸针,钮扣等饰品 href="http://www.mengsa.cn/" 
+  target=_blank>广州梦莎五金饰品厂</A></LI>
+  <LI><A href="http://www.yaosing.com/" target=_blank>广州曜新五金饰品厂</A></LI>
+  <LI><A title=生活小贴士,美容小贴士 href="http://tips.dayanmei.com/" 
+  target=_blank>小贴士</A> </LI></UL></DIV>
+<DIV id=Calendar>
+<DIV id=MyCalendar>
+<DIV id=M>
+<UL>
+  <LI>2007/10</LI></UL></DIV>
+<DIV class=HackBox></DIV>
+<DIV id=D>
+<UL>
+  <LI>一</LI>
+  <LI>二</LI>
+  <LI>三</LI>
+  <LI>四</LI>
+  <LI>五</LI>
+  <LI>六</LI>
+  <LI><FONT color=#ff0000>日</FONT></LI>
+  <LI>1 </LI>
+  <LI>2 </LI>
+  <LI><A href="http://www.dayanmei.com/blog.php/Record_20071003.htm"><FONT 
+  color=red>3</FONT></A> </LI>
+  <LI>4 </LI>
+  <LI>5 </LI>
+  <LI>6 </LI>
+  <LI>7 </LI>
+  <LI>8</LI>
+  <LI>9</LI>
+  <LI><A href="http://www.dayanmei.com/blog.php/Record_20071010.htm"><FONT 
+  color=#008200>10</FONT></A> </LI>
+  <LI>11</LI>
+  <LI>12</LI>
+  <LI>13</LI>
+  <LI>14</LI>
+  <LI>15</LI>
+  <LI>16</LI>
+  <LI>17</LI>
+  <LI>18</LI>
+  <LI>19</LI>
+  <LI><A href="http://www.dayanmei.com/blog.php/Record_20071020.htm"><FONT 
+  color=#008200>20</FONT></A> </LI>
+  <LI>21</LI>
+  <LI>22</LI>
+  <LI>23</LI>
+  <LI>24</LI>
+  <LI>25</LI>
+  <LI>26</LI>
+  <LI class=bg_today><A 
+  href="http://www.dayanmei.com/blog.php/Record_20071027.htm"><FONT 
+  color=#008200><B>27</B></FONT></A></LI>
+  <LI>28</LI>
+  <LI>29</LI>
+  <LI>30</LI>
+  <LI>31</LI>
+  <LI></LI>
+  <LI></LI>
+  <LI></LI>
+  <LI></LI>
+  <LI></LI>
+  <LI></LI>
+  <LI></LI>
+  <LI></LI>
+  <LI></LI>
+  <LI></LI>
+  <LI></LI></UL></DIV></DIV></DIV></DIV>
+<DIV class=HackBox></DIV></DIV><!-- END Main -->
+<DIV id=BottomBack></DIV>
+<DIV class=HackBox></DIV>
+<DIV id=Bottom><A href="http://www.dayanmei.com/aboutme.php">老李的个人自传</A> | <A 
+title=大眼妹,大眼妹域名的来历 
+href="http://www.dayanmei.com/blog.php/ID_514.htm">大眼妹域名的来历</A> | <A 
+title=php程序员，网页设计，求职简历 href="http://www.dayanmei.com/resume.php">求职简历</A> | <A 
+title=兼职网站建设,兼职网页设计 href="http://www.dayanmei.com/works.php">网站作品展示</A> | <A 
+title=智力测试 href="http://www.dayanmei.com/egao.htm">胆小请勿点击</A> | <A 
+href="http://www.dayanmei.com/sitemap.xml">网站地图</A> | <A 
+href="http://validator.w3.org/check?uri=referer">Valid XHTML 1.0</A></DIV>
+<DIV id=Copyright>
+<UL>
+  <LI>Copyright ©2005 - 2007 老李的个人日志. All Rights Reserved 
+  <LI>本日志程式及模版由老李(QQ:8989215)编写维护 
+  <LI><A href="http://www.miibeian.gov.cn/" target=_blank>粤ICP备06043306号</A>
+  <SCRIPT language=javascript src="分析淘宝网的层布局2_files/495641.js" 
+  type=text/javascript></SCRIPT>
+   <NOSCRIPT><A href="http://www.51.la/report/3_last.asp?id=495641" 
+  target=_blank><IMG 
+  style="BORDER-TOP-STYLE: none; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; BORDER-BOTTOM-STYLE: none" 
+  alt="" src="分析淘宝网的层布局2_files/s.gif"></A></NOSCRIPT> </LI></UL></DIV>
+<DIV class=HackBox></DIV>
+<DIV id=Stats><BR>
+<SCRIPT src="分析淘宝网的层布局2_files/urchin.js" type=text/javascript>
+</SCRIPT>
+
+<SCRIPT type=text/javascript>
+_uacct = "UA-330733-2";
+urchinTracker();
+</SCRIPT>
+</DIV></BODY></HTML>

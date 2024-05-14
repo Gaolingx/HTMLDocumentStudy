@@ -1,0 +1,105 @@
+IMG {
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; BORDER-LEFT: 0px; BORDER-BOTTOM: 0px
+}
+FORM {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+H1 {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+H2 {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+H3 {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+H4 {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+H5 {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+H6 {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+UL {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+OL {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+TD {
+	FONT-SIZE: 9pt; LINE-HEIGHT: 1.5
+}
+BODY {
+	FONT-SIZE: 9pt; MARGIN: 0px; LINE-HEIGHT: 1.5
+}
+DIV {
+	FONT-SIZE: 9pt; LINE-HEIGHT: 1.5
+}
+.h1 {
+	FONT-SIZE: 11pt; MARGIN: 0px
+}
+.h2 {
+	FONT-SIZE: 10pt; MARGIN: 0px
+}
+A:link {
+	FONT-SIZE: 9pt; COLOR: #000000; TEXT-DECORATION: none
+}
+A:visited {
+	FONT-SIZE: 9pt; COLOR: #000000; TEXT-DECORATION: none
+}
+A:hover {
+	FONT-SIZE: 9pt; COLOR: red
+}
+A.h1:link {
+	FONT-SIZE: 11pt; COLOR: #000000; TEXT-DECORATION: underline
+}
+A.h1:visited {
+	FONT-SIZE: 11pt; COLOR: #000000; TEXT-DECORATION: underline
+}
+A.h1:hover {
+	FONT-SIZE: 11pt; COLOR: red
+}
+A.ulink:link {
+	FONT-SIZE: 10pt; COLOR: #aa2716; TEXT-DECORATION: underline
+}
+A.ulink:visited {
+	FONT-SIZE: 10pt; COLOR: #c57f41; TEXT-DECORATION: underline
+}
+A.ulink:hover {
+	FONT-SIZE: 10pt; COLOR: red
+}
+.tbspan {
+	MARGIN-BOTTOM: 3px
+}
+.kw1 {
+	BORDER-RIGHT: #cccccc 1px solid; BORDER-TOP: #cccccc 1px solid; BORDER-LEFT: #cccccc 1px solid; WIDTH: 170px; BORDER-BOTTOM: #cccccc 1px solid; HEIGHT: 22px
+}
+.op1 {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 1px 0px 0px; WIDTH: 105px; PADDING-TOP: 0px; HEIGHT: 22px
+}
+.guidet {
+	BORDER-RIGHT: #a9cced 1px solid; PADDING-RIGHT: 1px; BORDER-TOP: #a9cced 1px solid; PADDING-LEFT: 1px; BORDER-LEFT: #a9cced 1px solid
+}
+.guideb {
+	BORDER-RIGHT: #a9cced 1px solid; PADDING-RIGHT: 3px; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; BORDER-LEFT: #a9cced 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: #a9cced 1px solid
+}
+.hotworddiv {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; OVERFLOW: hidden; WIDTH: 500px; PADDING-TOP: 0px; HEIGHT: 18px
+}
+.inddline {
+	BORDER-BOTTOM: #d7ded1 1px dashed
+}
+.mbline {
+	BORDER-BOTTOM: #ababab 1px dashed
+}
+.indl1 {
+	BORDER-BOTTOM: #efefef 1px solid
+}
+.indt1 {
+	BORDER-RIGHT: #cdcdcd 1px solid; BORDER-TOP: #cdcdcd 1px solid; FONT-SIZE: 10pt; BORDER-LEFT: #cdcdcd 1px solid; COLOR: #333333
+}
+.indt2 {
+	BORDER-RIGHT: #cdcdcd 1px solid; BORDER-TOP: #cdcdcd 1px solid; FONT-SIZE: 10pt; BORDER-LEFT: #cdcdcd 1px solid; COLOR: #333333
+}

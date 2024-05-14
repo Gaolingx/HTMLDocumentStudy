@@ -1,0 +1,34 @@
+body {
+	font-family: "ËÎÌו";
+	font-size: 12px;
+}
+a {
+	text-decoration: none;
+	color: blue;
+	font-size:12px;
+}
+table {
+	margin: 4px;
+	padding: 2px;
+	border: thin solid #FF99FF;
+}
+.picButton {
+   background-image:url(back.jpg);
+   border:0 px;
+   margin: 0px;
+   padding: 0px;
+   height: 23px;
+   width: 82px; 
+   font-size: 14px;
+}
+.textBorder {  
+    border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	}
+

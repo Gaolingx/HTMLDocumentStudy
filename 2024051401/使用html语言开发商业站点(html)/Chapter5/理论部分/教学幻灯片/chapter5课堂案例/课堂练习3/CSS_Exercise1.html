@@ -1,0 +1,62 @@
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=gb2312">
+<TITLE>样式练习1</TITLE>
+</HEAD>
+<STYLE type="text/css">
+
+/*细边框的文本输入框*/
+.textBaroder
+{
+	border-width:1px;
+	border-style:solid
+}
+.picButton{
+   background-image: url(image/Out.gif);
+   background-repeat:no-repeat;
+   color:#0000FF;
+   border:0 px;
+   margin: 0px;
+   padding: 0px;
+	height: 37px;
+	width: 80px;
+	font-size: ;
+	font:16px ;
+	color:#FFFFFF
+}
+A{   /*设置无下划线的超连接样式*/
+	color: blue;
+	text-decoration: none;
+   }       
+  A:hover{ /*鼠标在超链接上悬停时变为颜色*/
+   color: red;
+   text-decoration:underline
+   }
+</STYLE>
+
+<BODY>
+<TABLE width=222 border=0 align="center">
+  <TBODY>
+    <TR align=left>
+      <TD colspan="2"><IMG src="image/title_login_2.gif" width="150" height="57"></TD>
+    </TR>
+    <TR align=left>
+      <TD width="77">会员名:</TD>
+      <TD width="150"><INPUT class=textBaroder id=txtName size=15 
+                  name=txtName>      </TD>
+    </TR>
+    <TR align=left>
+      <TD>密&nbsp;&nbsp;码:</TD>
+      <TD><INPUT class=textBaroder id=txtPass type=password 
+                  size=15 name=txtPass>      </TD>
+    </TR>
+    <TR>
+      <TD colspan="2" align=center><INPUT name=Button type=submit class="picButton" value=" 登  录 "></TD>
+    </TR>
+    <TR>
+      <TD colspan="2" align=right><A href="＃">还没注册</A></TD>
+    </TR>
+  </TBODY>
+</TABLE>
+</BODY>
+</HTML>

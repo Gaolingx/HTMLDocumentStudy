@@ -1,0 +1,354 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<!-- saved from url=(0042)http://cmsdiv.cn/web/dreamweaver/2423.html -->
+<HTML xmlns="http://www.w3.org/1999/xhtml"><HEAD><TITLE>Dreamweaver中CSS样式表的应用实例- Dreamweaver制作技术-网页制作-CMS模板制作中心</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=gb2312"><LINK 
+href="使用DW制作样式实例_files/style.css" type=text/css rel=stylesheet>
+<META content=Dreamweaver中CSS样式表的应用实例,cms模板制作及免费下载中心 name=description>
+<META content="实例,应用,样式,CSS,Dreamweaver,&#9;Dreamweaver制作技术,网页制作,cms模板制作及免费下载中心" 
+name=keywords>
+<META content="MSHTML 6.00.3790.4026" name=GENERATOR></HEAD>
+<BODY>
+<DIV id=warp>
+<DIV id=header>
+<DIV 
+id=notice><STRONG>CMS模板制作中心</STRONG>将收集提供更多的CMS模版,定制多种CMS网站模板，同时也会不定期发布一些免费模板！ 
+</DIV><A id=logo title=CMS模板制作中心,CMS模板免费下载中心 href="http://cmsdiv.cn/"></A>
+<DIV id=collection><A title="把 CMS模板制作中心 -- http://cmsdiv.cn 加入收藏夹" 
+onclick="window.external.addFavorite('http://cmsdiv.cn','CMS模板制作中心')" 
+href="http://cmsdiv.cn/web/dreamweaver/2423.html#">加入收藏</A> | <A 
+title=把CMS模板制作中心设为首页 
+onclick="var strHref=window.location.href;this.style.behavior='url(#default#homepage)';this.setHomePage('http://cmsdiv.cn');" 
+href="http://cmsdiv.cn/web/dreamweaver/2423.html#">设为首页</A> | <A 
+title=[!--sitname--]地图导航 href="http://cmsdiv.cn/sitemap.html">网站地图</A> | <A 
+title=欢迎写下您的意见和建议以便于我们提高 href="http://cmsdiv.cn/e/tool/gbook?bid=1">发表留言</A> 
+</DIV></DIV>
+<DIV id=menu>
+<DIV><A id=rss title=rss订阅 
+href="http://cmsdiv.cn/e/web?type=rss2&amp;order=0&amp;orderby=0&amp;classid=1"></A><SPAN 
+class=name><A href="http://cmsdiv.cn/">首页</A><A title=新闻资讯 
+href="http://cmsdiv.cn/news/">新闻资讯</A><A title=模板下载 
+href="http://cmsdiv.cn/skin/">模板下载</A><A title=帮助中心 
+href="http://cmsdiv.cn/help/">帮助中心</A><A title=网页制作 
+href="http://cmsdiv.cn/web/">网页制作</A><A title=动画制作 
+href="http://cmsdiv.cn/flash/">动画制作</A><A title=网页特效 
+href="http://cmsdiv.cn/special/">网页特效</A><A title=网站运营 
+href="http://cmsdiv.cn/business/">网站运营</A></SPAN> </DIV></DIV>
+<DIV id=nav><SPAN id=nav_l><!--empire.url--><A class=classlinkclass 
+href="http://cmsdiv.cn/">首页</A>&nbsp;&gt;&nbsp;<A class=classlinkclass 
+href="http://cmsdiv.cn/web/">网页制作</A>&nbsp;&gt;&nbsp;<A class=classlinkclass 
+href="http://cmsdiv.cn/web/dreamweaver/"> Dreamweaver制作技术</A>&nbsp;&gt;<!--empire.url-->Dreamweaver中CSS样式表的应用实例</SPAN><SPAN 
+id=search>
+<FORM name=search action=/e/search/index.php method=post><INPUT id=keywords 
+size=10 name=keyboard> <SELECT name=show> <OPTION value=title 
+  selected>文章标题</OPTION> <OPTION value=newstext>全文搜索</OPTION> <OPTION 
+  value=writer>文章作者</OPTION></SELECT> <INPUT id=submit type=submit value=文章搜索 name=submit> </FORM></SPAN></DIV>
+<DIV id=main>
+<DIV id=bmain_l>
+<DIV id=title>
+<H1>Dreamweaver中CSS样式表的应用实例</H1></DIV>
+<DIV id=info>CMS模板制作中心　来源：<A href="http://cmsdiv.cn/" 
+target=_blank>网络收集</A>　作者：佚名　发布时间：2007-03-22</DIV>
+<DIV id=zoom>
+<DIV id=gg300>
+<SCRIPT type=text/javascript><!--
+google_ad_client = "pub-5086309882696317";
+google_alternate_color = "FFFFFF";
+google_ad_width = 300;
+google_ad_height = 250;
+google_ad_format = "300x250_as";
+google_ad_type = "text_image";
+//2007-04-29: cmsdiv.cn
+google_ad_channel = "6132215741";
+google_color_border = "FFFFFF";
+google_color_bg = "FFFFFF";
+google_color_link = "10559b";
+google_color_text = "000000";
+google_color_url = "66B5FF";
+//-->
+</SCRIPT>
+
+<SCRIPT src="使用DW制作样式实例_files/show_ads.js" type=text/javascript>
+</SCRIPT>
+</DIV>
+<P>　　要想做出精美的网页一定要用到CSS。层叠样式表 (CSS) 是一系列格式规则，它们控制网页内容的外观。CSS 样式使您可以控制许多仅使用 HTML 
+无法控制的属性。CSS的重要性就不多说了，要说清楚CSS可以写成一本大书。本文的目的，是想通过一篇文章，掌握CSS最基本最重要的应用。</P>
+<P>　<STRONG>　第一部分:要实现的目标:把一个网页的文字变成好看的12象素(px)大小。</STRONG></P>
+<P>　　实现方法:通过“重定义HTML”标签，定义td(td是单元格的标签)的字体大小为12象素(px)。因为整个网页内容放在表格中的，也是放在单元格中的，所以，可能通过重定义单元格样式，改变所有放在单元格里的内容。当然，重定义表格标签table，也可以实现同样的效果。</P>
+<P>　　简明步骤:打开样式面板→在类型中选择“重定义HTML”标签→选择要重定义的标签，例如td→给所选标签(例如td)定义CSS→一个定义了标签的网页就做好了。</P>
+<P>　　1.打开一个网页文档。</P>
+<P>　　<IMG height=178 alt="" src="使用DW制作样式实例_files/6934265x4m99.jpg" 
+width=302></P>
+<P>　　2.打开样式面板。</P>
+<P>　　<IMG height=127 alt="" src="使用DW制作样式实例_files/7ne4jjkrg4x4.jpg" 
+width=208></P>
+<P>　　3.点击“新建CSS样式“按钮。</P>
+<P>　　<IMG height=61 alt="" src="使用DW制作样式实例_files/8410d7n9989d.jpg" width=96></P>
+<P>　　4.在“类型”中，选择“重定义HTML”标签。</P>
+<P>　　<IMG height=180 alt="" src="使用DW制作样式实例_files/r8b2nv592q2o.jpg" 
+width=348></P>
+<P>　　5.选择td标签。Td标签代表单元格。</P>
+<P>　　<IMG height=211 alt="" src="使用DW制作样式实例_files/ea807d37a54v.jpg" 
+width=348></P>
+<P>　　6.选择分类中的“类型”。</P>
+<P align=center><IMG height=338 alt="" src="使用DW制作样式实例_files/6h4cpvr68z51.jpg" 
+width=533></P>
+<P>　　7.设置字体:选择字体，如果没有需要的字体，可以编辑字体列表，见第二部分。</P>
+<P>　　大小:设置字体大小，好看的中文字大小有12象素(px)和9点数(pt)两种，两者效果差不多。</P>
+<P>　　行高:行高是一行文字与另一行文字之间的距离，为了方便阅读，行高设置大点吧。可以设置在15像素到25像素之间。实例中使用20像素。</P>
+<P>　　修饰:对于普通文本，选择无。对于链接，可以选择下划线，上划线加下划线，无等几种。</P>
+<P>　　颜色:黑色最适合阅读，其次就是灰色，白色。链接默认的蓝色，颜色太深，如果整个页面都是链接，使用蓝色根本起不到分辨的作用，并且十分难看。建议页面不要使用默认的蓝色!</P>
+<P><IMG height=338 alt="" src="使用DW制作样式实例_files/5ji9e3gjyca6.jpg" width=533></P>
+<P>　　8.按“确定”按钮后，一个应用了CSS的网页就做好了。</P>
+<P>　　<IMG height=178 alt="" src="使用DW制作样式实例_files/17z60t63wg94.jpg" 
+width=302></P>
+<P>　　第二部分:编辑字体列表。</P>
+<P>　　1.单击字体栏的下拉箭头，打开编辑字体列表。</P>
+<P>　　<IMG height=114 alt="" src="使用DW制作样式实例_files/3qib521da88k.jpg" 
+width=300></P>
+<P>　　2.在编辑字体列表窗口中，点击加号按钮。</P>
+<P>　　<IMG height=256 alt="" src="使用DW制作样式实例_files/fsvy75glek96.jpg" 
+width=450></P>
+<P>　　3.选择一种字体，如宋体，按左箭头按钮。</P>
+<P>　　<IMG height=256 alt="" src="使用DW制作样式实例_files/dj53vc40zs49.jpg" 
+width=450></P>
+<P>　　4.继续添加字体，选择一种字体，如Arial，按箭头按钮添加。</P>
+<P>　　说明:一个字体列表中有多种字体，比如“方正，宋体，黑体，华文中宋”，访问者电脑从最开头的方正字体开始执行，如果没有对应的方正字体，就执行宋体，没有宋体，就执行黑体，如果列表中的字体都没有，就用系统默认的字体替代。</P>
+<P>　　<IMG height=256 alt="" src="使用DW制作样式实例_files/a387868v74ce.jpg" 
+width=450></P>
+<P>　　5.可以重复以上的步骤，添加其它组合的字体。</P>
+<P>　　<IMG height=256 alt="" src="使用DW制作样式实例_files/9q7a4bz6107c.jpg" 
+width=450></P>
+<P>　　第三部分:重定义body标签，使表格之外的内容应用样式。如果在一个网页中，在表格之外还有内容，就需要定义body标签。</P>
+<P>　　1.定义了单元格而没有定义body的网页。</P>
+<P>　　<IMG height=179 alt="" src="使用DW制作样式实例_files/s7l6l41g6o1z.jpg" 
+width=307></P>
+<P>　　2.选择重定义“body”标签。按照第一部分的方法，定义“body”标签。</P>
+<P>　　<IMG height=210 alt="" src="使用DW制作样式实例_files/0tal2e6tmbti.jpg" 
+width=348></P>
+<P>　　3.定义了body的网页。</P>
+<P>　　<IMG height=179 alt="" src="使用DW制作样式实例_files/708wl4ad2lr9.jpg" 
+width=307></P>
+<P>　　第四部分:定义表单标签。如果在一个网页中使用表单，就需要重定义这些表单标签。</P>
+<P>　　<IMG height=80 alt="" src="使用DW制作样式实例_files/7a3l5792e7ix.jpg" 
+width=528></P>
+<P>　　1.定义input标签。</P>
+<P>　　<IMG height=216 alt="" src="使用DW制作样式实例_files/15m3o8mw0sx8.jpg" 
+width=350></P>
+<P>　　2.定义select标签。</P>
+<P>　　<IMG height=180 alt="" src="使用DW制作样式实例_files/x3osz80mmqu5.jpg" 
+width=348></P>
+<P>　　3.定义textarea标签。</P>
+<P>　　<IMG height=180 alt="" src="使用DW制作样式实例_files/ys849z9me114.jpg" 
+width=348></P>
+<P>　　第五部分:定义层对应的标签。层对应的标签是div。</P>
+<P>　　<IMG height=180 alt="" src="使用DW制作样式实例_files/0sl6mt6q0895.jpg" 
+width=348></P>
+<P>　　第六部分:定义锚标签。也就是有关链接的标签。锚对应的标签是a。</P>
+<P>　　1默认锚标签的网页，链接有下划线，蓝色。这种链接很难看!</P>
+<P>　　<IMG height=179 alt="" src="使用DW制作样式实例_files/h1vu0n12r72s.jpg" 
+width=307></P>
+<P>　　2.在标签下拉栏中选择a。</P>
+<P>　　<IMG height=180 alt="" src="使用DW制作样式实例_files/7nb9t4poe4w3.jpg" 
+width=348></P>
+<P>　　3.定义a的CSS样式。大小选择12象素;修饰选择无;颜色选择一种深灰色，就可以和采用黑色的文本区分开来。</P>
+<P>　　<IMG height=296 alt="" src="使用DW制作样式实例_files/39262j304a33.jpg" 
+width=468></P>
+<P>　　4.重定义了锚标签的网页。</P>
+<P>　　<IMG height=179 alt="" src="使用DW制作样式实例_files/ku5nzw87xf36.jpg" 
+width=307></P>
+<P>　　第七部分:修改样式表。</P>
+<P>　　1.在CSS样式面板中，单击“编辑样式”单选按钮，再点击右下角的“编辑样式表”按钮。</P>
+<P>　　<IMG height=244 alt="" src="使用DW制作样式实例_files/r941yvkcio99.jpg" 
+width=241></P>
+<P>　　2.对CSS样式做一些修改。实例中是把颜色变得更淡。</P>
+<P>　　<IMG height=281 alt="" src="使用DW制作样式实例_files/f320opp67q5h.jpg" 
+width=444></P>
+<P>　　3.修改了样式的网页。</P>
+<P>　　<IMG height=179 alt="" src="使用DW制作样式实例_files/71ky76op7276.jpg" 
+width=307></P>
+<P>　　一个网页需要定义的基本样式就定义好了，网页会直接应用上新定义的样式。根据需要，还可以定义其它标签的样式，例如定义水平条的标签hr的颜色。</P>
+<P>　　在创建CSS时，可以根据个人喜好，选择一种应用CSS的方式。如果希望用相同的样式控制多个文档的格式，使用“外部CSS样式表”是最简单的方法。如果喜欢步骤简单，或者只有一个页面需要应用某个CSS样式表，那就使用“仅对该文档的CSS”。</P>
+<P>　　主要内容:</P>
+<P>　　1.“仅对该文档的CSS”的创建和应用;</P>
+<P>　　2.“外部CSS样式表”的创建;</P>
+<P>　　3.链接“外部CSS样式表”文件;</P>
+<P>　　4.“仅对该文档的CSS”转换成“外部CSS样式表”;</P>
+<P>　　5.“外部CSS样式表”转换成“仅对该文档的CSS”;</P>
+<P>　　6.使用“代码片段”功能重复使用“仅对该文档的CSS”。</P>
+<P>　　在Dreamweaver中创建CSS时，可以选择“定义在该文档”和“新建样式表文件”之一创建CSS样式表。“定义在该文档”只作用在当前文档;“新建样式表文件”创建出一个独立的外部CSS样式表文件，多个文档可以链接到外部CSS样式表文件。</P>
+<P>　　<IMG height=161 alt="" src="使用DW制作样式实例_files/67px1y8a780g.jpg" 
+width=312></P>
+<P>　　1. “仅对该文档的CSS”的创建和应用。</P>
+<P>　　选择“仅对该文档”，定义CSS后，CSS就出现在之间。它的优点是创建好了就直接应用到当前文档了。</P>
+<P>　　<IMG height=161 alt="" src="使用DW制作样式实例_files/ro51vig0011w.jpg" 
+width=312></P>
+<P>　　2. 创建“外部CSS样式表”。</P>
+<P>　　2.1选择“新建样式表文件”。</P>
+<P>　　<IMG height=161 alt="" src="使用DW制作样式实例_files/qfu510l74b4f.jpg" 
+width=312></P>
+<P>　　2.2选择保存在的文件夹→给CSS文件命名→选择相对于文档→保存。</P>
+<P>　　<IMG height=281 alt="" src="使用DW制作样式实例_files/c8e80w2x5i84.jpg" 
+width=336></P>
+<P>　　2.3定义CSS样式。</P>
+<P>　　<IMG height=270 alt="" src="使用DW制作样式实例_files/31wv1qk9v2mx.jpg" 
+width=426></P>
+<P>　　2.4一个“外部CSS样式表”就做好了。</P>
+<P>　　<IMG height=140 alt="" src="使用DW制作样式实例_files/9c78c8y3plb0.jpg" 
+width=219></P>
+<P>　　3. 链接“外部CSS样式表”文件。</P>
+<P>　　使用外部CSS的优点是:只要修改外部的CSS样式表文件，所有链接到该样式表文件的文档格式都会自动发生改变。</P>
+<P>　　简明步骤:打开一个网页文档→打开CSS样式面板→点击“附加样式表”按钮→点击“浏览”按钮→选择需要的外部CSS样式表文件→点击“确定”按钮。</P>
+<P>　　3.1打开一个要应用CSS的网页文档。</P>
+<P>　　3.2打开CSS样式面板。</P>
+<P>　　3.3点击“附加样式表”按钮。</P>
+<P>　　<IMG height=53 alt="" src="使用DW制作样式实例_files/m1204uj18qj5.jpg" width=83></P>
+<P>　　3.4点击“浏览”按钮。</P>
+<P>　　<IMG height=81 alt="" src="使用DW制作样式实例_files/1xv17x47v2z8.jpg" 
+width=324></P>
+<P>　　3.5选择需要的外部CSS样式表文件。</P>
+<P>　　<IMG height=231 alt="" src="使用DW制作样式实例_files/92lip2wyur8j.jpg" 
+width=276></P>
+<P>　　3.6点击“确定”按钮。之后文档就会应用外部样式。</P>
+<P>　　<IMG height=84 alt="" src="使用DW制作样式实例_files/9pnc9k095k3y.jpg" 
+width=336></P>
+<P>　　4. “仅对该文档的CSS”转换成“外部CSS样式表”;</P>
+<P>　　把文档中的CSS样式导出成为一个独立的CSS样式表文件。</P>
+<P>　　简明步骤:文件→导出→CSS样式。</P>
+<P>　　<IMG height=197 alt="" src="使用DW制作样式实例_files/7gv8i57306l8.jpg" 
+width=264></P>
+<P>　　5.“外部CSS样式表”转换成“仅对该文档的CSS”;</P>
+<P>　　简明步骤:双击打开外部CSS样式表文件→在样式表的开头添加 
+<STYLE type=text/css></STYLE>
+→把整个CSS代码复制到一个文档的前面。</P>
+<P>　　6.使用“代码片段”功能重复使用“仅对该文档的CSS”。</P>
+<P>　　如果能够重复使用“仅对该文档的CSS”，就可以快速应用到大量需要使用相同CSS的文档中。</P>
+<P>　　简明步骤:创建CSS代码片断:选择一个包含CSS样式表的文档→进入代码视图→选择CSS样式代码→点击右键→点击“创建新代码片断” →命名。</P>
+<P>　　应用CSS代码片断:打开一个网页文档→进入代码视图→把插入点放在前面→打开“代码片断”面板→选择定义好的CSS样式→点击插入按钮。</P>
+<P>　　6.1选中文档中的CSS样式表代码，点击右键，点击“创建新代码片断”。</P>
+<P>　　<IMG height=256 alt="" src="使用DW制作样式实例_files/22vjx8t419c1.jpg" 
+width=300></P>
+<P>　　6.2给代码片断命名。</P>
+<P>　　<IMG height=289 alt="" src="使用DW制作样式实例_files/eg92933p5h31.jpg" 
+width=420></P>
+<P>　　6.3打开需要应用样式表的文档，进入代码视图，把插入点放在前面。选择CSS代码片断，点击插入按钮。</P>
+<P>　　<IMG height=223 alt="" src="使用DW制作样式实例_files/s3rq34z44t4w.jpg" 
+width=236></P><YESKYRECOMMEND></YESKYRECOMMEND>
+<P>　　最后，推荐使用“外部CSS样式表”。</P></DIV>
+<DIV id=bpage></DIV>
+<DIV 
+id=warning>版权声明：文章版权均归文章原作者所有，转载以及原创文章我们都将尽量注明出处及作者名称，<BR>如果侵犯了您的权利，请通知我们，将在第一时间删除。谢谢您的支持！<A 
+title=CMS模板制作中心,cms模板制作及免费下载中心 
+href="http://cmsdiv.cn/"><STRONG>CMS模板制作中心</STRONG></A>(http://cmsdiv.cn)</DIV></DIV>
+<DIV id=main_r>
+<DIV class=sidebar>
+<DIV class=head>栏目导航</DIV>
+<DIV class=list id=sonclasses>
+<UL>
+  <LI><A title=HTML基础知识 href="http://cmsdiv.cn/web/html/">HTML基础知识</A></LI>
+  <LI><A title=Fireworks制作技术 
+  href="http://cmsdiv.cn/web/fireworks/">Fireworks制作技术</A></LI>
+  <LI><A title="&#9;Dreamweaver制作技术" 
+  href="http://cmsdiv.cn/web/dreamweaver/">Dreamweaver制作技术</A></LI>
+  <LI><A title=FrontPage制作技术 
+  href="http://cmsdiv.cn/web/frontpage/">FrontPage制作技术</A></LI>
+  <LI><A title=JavaScript技术应用 
+  href="http://cmsdiv.cn/web/javascript/">JavaScript技术应用</A></LI>
+  <LI><A title=XML技术应用 href="http://cmsdiv.cn/web/xml/">XML技术应用</A></LI>
+  <LI><A title=CSS技术应用 href="http://cmsdiv.cn/web/css/">CSS技术应用</A></LI>
+  <LI><A title=图象相关技术 href="http://cmsdiv.cn/web/photo/">图象相关技术</A></LI>
+  <LI><A title=网页制作技巧 
+href="http://cmsdiv.cn/web/skill/">网页制作技巧</A></LI></UL></DIV></DIV>
+<DIV class=sidebar>
+<DIV class=head>相关文章</DIV>
+<DIV class=list>
+<UL>
+  <LI><A title=[!--oldtitle--] 
+  href="http://cmsdiv.cn/web/dreamweaver/2422.html">在 Dreamweaver 
+  中指定哪里处理动态页</A></LI>
+  <LI><A title=[!--oldtitle--] 
+  href="http://cmsdiv.cn/web/dreamweaver/2421.html">在Dreamweaver中创建或修改 
+  ColdFusion 数据源</A></LI>
+  <LI><A title=[!--oldtitle--] 
+  href="http://cmsdiv.cn/web/dreamweaver/2420.html">在Dreamweaver中如何把握好网页表格</A></LI>
+  <LI><A title=[!--oldtitle--] 
+  href="http://cmsdiv.cn/web/dreamweaver/2419.html">在Dreamweaver中灵活使用网页表格</A></LI>
+  <LI><A title=[!--oldtitle--] 
+  href="http://cmsdiv.cn/web/dreamweaver/2417.html">Dreamweaver网页中实用的制作技巧</A></LI>
+  <LI><A title=[!--oldtitle--] 
+  href="http://cmsdiv.cn/web/dreamweaver/2416.html">用Dreamweaver8搞定web标准</A></LI>
+  <LI><A title=[!--oldtitle--] 
+  href="http://cmsdiv.cn/web/dreamweaver/2415.html">用Dreamweaver设计限时自动关闭的网页</A></LI>
+  <LI><A title=[!--oldtitle--] 
+  href="http://cmsdiv.cn/web/dreamweaver/2414.html">网页制作 
+  用Dreamweaver制作细边表格</A></LI>
+  <LI><A title=[!--oldtitle--] 
+  href="http://cmsdiv.cn/web/dreamweaver/2413.html">Dreamweaver网页制作技巧：使用模板</A></LI>
+  <LI><A title=[!--oldtitle--] 
+  href="http://cmsdiv.cn/web/dreamweaver/2412.html">Dreamweaver制作网页的图片应用技巧</A></LI></UL></DIV></DIV>
+<DIV class=sidebar>
+<DIV class=head>最近更新</DIV>
+<DIV class=list>
+<UL>
+  <LI><A title="Dreamweaver 入门：注册 Dreamweaver 8" 
+  href="http://cmsdiv.cn/web/dreamweaver/2439.html">Dreamweaver 入门：注册 
+  Dreamwe</A></LI>
+  <LI><A title="Dreamweaver 基础：了解DW的状态栏" 
+  href="http://cmsdiv.cn/web/dreamweaver/2438.html">Dreamweaver 
+  基础：了解DW的状态</A></LI>
+  <LI><A title="Dreamweaver 基础：DW的工作区布局" 
+  href="http://cmsdiv.cn/web/dreamweaver/2437.html">Dreamweaver 
+  基础：DW的工作区布</A></LI>
+  <LI><A title="Dreamweaver 基础 ：DW的“文档”窗口" 
+  href="http://cmsdiv.cn/web/dreamweaver/2436.html">Dreamweaver 基础 
+  ：DW的“文档”</A></LI>
+  <LI><A title="Dreamweaver 基础 ：DW的“文档”工具栏" 
+  href="http://cmsdiv.cn/web/dreamweaver/2435.html">Dreamweaver 基础 
+  ：DW的“文档”</A></LI>
+  <LI><A title="Dreamweaver 入门：向页面中插入图像" 
+  href="http://cmsdiv.cn/web/dreamweaver/2434.html">Dreamweaver 
+  入门：向页面中插入</A></LI>
+  <LI><A title="Dreamweaver 入门:创建基于表格的页面布局" 
+  href="http://cmsdiv.cn/web/dreamweaver/2433.html">Dreamweaver 
+  入门:创建基于表格的</A></LI>
+  <LI><A title="Dreamweaver 入门：使用CSS设置页面格式" 
+  href="http://cmsdiv.cn/web/dreamweaver/2432.html">Dreamweaver 
+  入门：使用CSS设置页</A></LI>
+  <LI><A title="Dreamweaver 入门：发布你的站点" 
+  href="http://cmsdiv.cn/web/dreamweaver/2431.html">Dreamweaver 
+  入门：发布你的站点</A></LI>
+  <LI><A title=在Dreamweaver中按下左右光标时切换到相邻单元格 
+  href="http://cmsdiv.cn/web/dreamweaver/2430.html">在Dreamweaver中按下左右光标时切</A></LI></UL></DIV></DIV>
+<DIV class=sidebar>
+<DIV class=head>热门文章</DIV>
+<DIV class=list>
+<UL>
+  <LI><A title=视频教程：Dreamweaver创建网站相册2 
+  href="http://cmsdiv.cn/web/dreamweaver/2077.html">视频教程：Dreamweaver创建网站相</A></LI>
+  <LI><A title=用Dreamweaver插入网页背景音乐的方法 
+  href="http://cmsdiv.cn/web/dreamweaver/2428.html">用Dreamweaver插入网页背景音乐的</A></LI>
+  <LI><A title=使用Dreamweaver插件制作滚动文字效果 
+  href="http://cmsdiv.cn/web/dreamweaver/1898.html">使用Dreamweaver插件制作滚动文字</A></LI>
+  <LI><A title=Dreamweaver制作漂亮的网页Flash电子相册 
+  href="http://cmsdiv.cn/web/dreamweaver/2301.html">Dreamweaver制作漂亮的网页Flash</A></LI>
+  <LI><A title="Dreamweaver 入门：注册 Dreamweaver 8" 
+  href="http://cmsdiv.cn/web/dreamweaver/2439.html">Dreamweaver 入门：注册 
+  Dreamwe</A></LI>
+  <LI><A title="手把手教你学Dreamweaver MX 2004(视频教程)" 
+  href="http://cmsdiv.cn/web/dreamweaver/2142.html">手把手教你学Dreamweaver MX 
+  200</A></LI>
+  <LI><A title=Dreamweaver网页制作教程：创建导航条 
+  href="http://cmsdiv.cn/web/dreamweaver/2337.html">Dreamweaver网页制作教程：创建导</A></LI>
+  <LI><A title="Dreamweaver 入门：使用CSS设置页面格式" 
+  href="http://cmsdiv.cn/web/dreamweaver/2432.html">Dreamweaver 
+  入门：使用CSS设置页</A></LI>
+  <LI><A title="Dreamweaver 入门：向页面中插入图像" 
+  href="http://cmsdiv.cn/web/dreamweaver/2434.html">Dreamweaver 
+  入门：向页面中插入</A></LI>
+  <LI><A title=Dreamweaver实现鼠标悬停多变色链接效果 
+  href="http://cmsdiv.cn/web/dreamweaver/2243.html">Dreamweaver实现鼠标悬停多变色链</A></LI></UL></DIV></DIV></DIV></DIV>
+<DIV id=footer>关于我们 | 模版定制 | 投放广告 | 联系方式 | 如何投稿 | 友情链接<BR>Copyright &copy; <A 
+class=sitename title=CMS模板制作中心 href="http://cmsdiv.cn/">CMSdiv.cn</A> All Rights 
+Reserved. 模板定制群：[36301089]<BR>2006-2008 </DIV></DIV>
+<DIV style="DISPLAY: none"></DIV>
+<SCRIPT src="使用DW制作样式实例_files/onclick.htm"></SCRIPT>
+<!--Published Date:2007-09-27 09:21:55   Powered by phome.net,Products:EmpireCMS4.6 Free--></BODY></HTML>

@@ -1,0 +1,59 @@
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=gb2312">
+<TITLE>表格对表单的布局作业练习</TITLE>
+</HEAD>
+
+<BODY>
+<FORM>
+<TABLE bgcolor="#FFFFFF">
+ <TR bgcolor="#FFFFFF">
+   <TD colspan="2" align=right bgcolor="#FFFFFF"><DIV align="center"><H2>用户详细资料</H2>
+   </DIV></TD>
+</TR>
+ <TR bgcolor="#FFFFFF">
+  <TD width=30% align=right bgcolor="#E7FBFF">您的真实姓名：</TD>
+  <TD class=pad><INPUT  type="text" name="textfield" size="10"><FONT color=red>**</FONT> 以便发货确认 </TD>
+</TR>
+<TR bgcolor="#FFFFFF">
+	<TD width=30% align=right bgcolor="#E7FBFF">您的身份证号：</TD>
+	<TD class=pad><INPUT  name="MoMNo" type="text"  maxlength="18"></TD>
+</TR>
+<TR bgcolor="#FFFFFF">
+	<TD width=30% align=right bgcolor="#E7FBFF">姓　　别：</TD>
+	<TD class=pad><INPUT type=radio name=babysex value=0 checked>
+		男
+		<INPUT type=radio name=babysex  value=1>
+		女 </TD>
+</TR>
+  <TR bgcolor="#FFFFFF">
+		<TD width=30% align=right bgcolor="#E7FBFF">用户性质：</TD>
+		<TD class=pad><INPUT type=radio name=dadyname value="个人用户" checked>
+		  个人用户
+			<INPUT type=radio name=dadyname value="企业用户">
+			企业用户 </TD>
+  </TR>
+<TR bgcolor="#FFFFFF">
+	<TD width=30% align=right bgcolor="#E7FBFF">收货(通讯)地址：</TD>
+	<TD class=pad><INPUT  name="shouhuodizhi" type="text" size="35" maxlength="30">
+		<FONT color=red>**</FONT> </TD>
+</TR>
+<TR bgcolor="#FFFFFF">
+	<TD width=30% align=right bgcolor="#E7FBFF">邮　　编：</TD>
+	<TD class=pad><INPUT  name="youbian" type="text"  maxlength="6" size="10">
+		<FONT color=red>**</FONT> </TD>
+</TR>
+<TR bgcolor="#FFFFFF">
+	<TD width=30% align=right bgcolor="#E7FBFF">联系电话：</TD>
+	<TD class=pad><INPUT  name="usertel" maxlength="18" type="text">
+		<FONT color=red>**</FONT> </TD>
+</TR>
+<TR bgcolor="#FFFFFF">
+	<TD width=30% align="right" bgcolor="#E7FBFF"></TD>
+	<TD class=pad><INPUT  type=submit name="submit" value=" 提交信息 ">
+		<INPUT  type=reset name="Clear" value=" 重新填写 ">	</TD>
+</TR>
+</TABLE>
+</FORM>
+</BODY>
+</HTML>

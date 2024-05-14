@@ -1,0 +1,123 @@
+#header {
+	PADDING-LEFT: 45px; BACKGROUND: #6495ed; PADDING-BOTTOM: 30px; MARGIN: 0px; COLOR: #000000; BORDER-BOTTOM: #4169e1 1px solid; FONT-FAMILY: Verdana, "Courier New", monospace; HEIGHT: 20px
+}
+#main {
+	BORDER-RIGHT: #4169e1 1px solid; BORDER-TOP: #6495ed 1px solid; MARGIN-TOP: 10px; MARGIN-BOTTOM: 10px; PADDING-BOTTOM: 40px; BORDER-LEFT: #6495ed 1px solid; WIDTH: 66%; PADDING-TOP: 60px; BORDER-BOTTOM: #4169e1 1px solid; POSITION: absolute; BACKGROUND-COLOR: #ffffff
+}
+#rightmenu {
+	MARGIN-TOP: 10px; PADDING-LEFT: 0px; FLOAT: right; MARGIN-LEFT: 68%; WIDTH: 31%; POSITION: absolute; BACKGROUND-COLOR: transparent
+}
+#footer {
+	CLEAR: both; BORDER-TOP: medium none; FONT-SIZE: 8pt; VISIBILITY: hidden; WIDTH: 100%; PADDING-TOP: 5px; POSITION: relative; TEXT-ALIGN: center
+}
+A:visited {
+	COLOR: #4169e1; TEXT-DECORATION: none
+}
+A:active {
+	COLOR: #4169e1; TEXT-DECORATION: none
+}
+A:link {
+	COLOR: #4169e1; TEXT-DECORATION: none
+}
+A:hover {
+	COLOR: orange; TEXT-DECORATION: underline
+}
+BLOCKQUOTE {
+	BORDER-RIGHT: #f4f4f4 1px solid; PADDING-RIGHT: 11px; BORDER-TOP: #f4f4f4 1px solid; PADDING-LEFT: 11px; FONT-SIZE: 10pt; BACKGROUND: #f9f9f9; PADDING-BOTTOM: 0px; BORDER-LEFT: #f4f4f4 1px solid; COLOR: #5b5b5b; LINE-HEIGHT: 150%; PADDING-TOP: 0px; BORDER-BOTTOM: #f4f4f4 1px solid; FONT-STYLE: normal
+}
+BODY {
+	FONT-SIZE: 10pt; MARGIN: 0px; WIDTH: 100%; COLOR: #000000; BACKGROUND-COLOR: #e6e6fa
+}
+H1 A:visited {
+	FONT-SIZE: 11pt; COLOR: black; TEXT-DECORATION: none
+}
+H1 A:active {
+	FONT-SIZE: 11pt; COLOR: black; TEXT-DECORATION: none
+}
+H1 A:link {
+	FONT-SIZE: 11pt; COLOR: black; TEXT-DECORATION: none
+}
+H1 A:hover {
+	COLOR: #ffffff; TEXT-DECORATION: none
+}
+H2 {
+	FONT-SIZE: 10pt; COLOR: #000000; BORDER-BOTTOM: #d6d6d6 1px dotted
+}
+H3 {
+	FONT-SIZE: 10pt; COLOR: #000000; BORDER-BOTTOM: #d6d6d6 1px dotted; BACKGROUND-COLOR: transparent
+}
+H5 {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 10pt; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+HR {
+	COLOR: #ffffff; BORDER-BOTTOM: #d6d6d6 1px dotted
+}
+INPUT {
+	FONT-SIZE: 10pt; COLOR: gray; FONT-FAMILY: Verdana
+}
+LABEL {
+	FONT-SIZE: 10pt; COLOR: gray; FONT-FAMILY: Verdana
+}
+INPUT.text {
+	WIDTH: 300px
+}
+LI {
+	FONT-SIZE: 10pt; FONT-STYLE: normal
+}
+P.date {
+	PADDING-RIGHT: 40px; PADDING-LEFT: 40px; FONT-WEIGHT: bold; FONT-SIZE: 9pt; PADDING-BOTTOM: 0px; COLOR: #000000; PADDING-TOP: 0px; BORDER-BOTTOM: #d6d6d6 1px dotted
+}
+P.date IMG {
+	VERTICAL-ALIGN: middle
+}
+P.postfoot {
+	FONT-SIZE: 9pt; COLOR: #d3d3d3; BORDER-BOTTOM: #d6d6d6 1px dotted; TEXT-ALIGN: right
+}
+.post {
+	PADDING-RIGHT: 40px; PADDING-LEFT: 70px
+}
+SPAN.highlight {
+	BACKGROUND-COLOR: transparent
+}
+TD {
+	FONT-SIZE: 10pt
+}
+TEXTAREA {
+	FONT-SIZE: 10pt; WIDTH: 300px; COLOR: #000000; HEIGHT: 200px
+}
+#MyLinks1_XMLLink {
+	VISIBILITY: hidden
+}
+#MyLinks1_Syndication {
+	VISIBILITY: hidden
+}
+#commentform {
+	PADDING-RIGHT: 40px; BORDER-TOP: #d6d6d6 1px dotted; PADDING-LEFT: 70px; COLOR: #a9a9a9; PADDING-TOP: 20px
+}
+#comments {
+	PADDING-RIGHT: 40px; PADDING-LEFT: 70px; COLOR: #888
+}
+#comments H4 {
+	BORDER-TOP: #d6d6d6 1px dotted; FONT-SIZE: 10pt; MARGIN: 0px; COLOR: #888
+}
+#comments H4 SPAN {
+	FONT-SIZE: 10pt; COLOR: #888
+}
+#relatedlinks UL {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN-LEFT: 10px; PADDING-TOP: 0px; LIST-STYLE-TYPE: none
+}
+#rightmenu H3 {
+	BORDER-RIGHT: medium none; PADDING-RIGHT: 5px; BORDER-TOP: medium none; PADDING-LEFT: 5px; FONT-SIZE: 10pt; PADDING-BOTTOM: 2px; MARGIN: 10px 0px 0px; BORDER-LEFT: medium none; COLOR: #000000; PADDING-TOP: 2px; BORDER-BOTTOM: #cdd0f6 1px dotted; BACKGROUND-COLOR: transparent
+}
+#rightmenu UL {
+	BORDER-RIGHT: medium none; PADDING-RIGHT: 5px; BORDER-TOP: medium none; PADDING-LEFT: 5px; FONT-SIZE: 9pt; PADDING-BOTTOM: 5px; MARGIN: 0px; BORDER-LEFT: medium none; PADDING-TOP: 5px; BORDER-BOTTOM: medium none; LIST-STYLE-TYPE: none
+}
+#rightmenu LI {
+	FONT-SIZE: 9pt
+}
+#tagline {
+	FONT-SIZE: 10pt; RIGHT: 35px; MARGIN: 0px; COLOR: white; POSITION: absolute; TOP: 25px
+}
+CODE {
+	FONT-SIZE: 10pt; FONT-FAMILY: "Courier New", Courier, monospace
+}

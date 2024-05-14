@@ -1,0 +1,73 @@
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=gb2312">
+<TITLE>练习表单</TITLE>
+</HEAD>
+
+<BODY>
+<FORM name="form1" method="post" action="">
+  <TABLE width="80%" border="1" align="center" bgcolor="#FFCCFF">
+    <TR>
+      <TD><DIV align="right">用户名：</DIV></TD>
+      <TD><LABEL>
+        <INPUT name="name" type="text" id="name">
+      </LABEL></TD>
+    </TR>
+    <TR>
+      <TD><DIV align="right">密码：</DIV></TD>
+      <TD><LABEL>
+        <INPUT name="password" type="password" id="password">
+      </LABEL></TD>
+    </TR>
+    <TR>
+      <TD height="29"><DIV align="right">性别：</DIV></TD>
+      <TD><LABEL>
+        <INPUT name="radiobutton" type="radio" value="radiobutton" checked>
+       男  
+       <INPUT type="radio" name="radiobutton" value="radiobutton">
+      女</LABEL></TD>
+    </TR>
+    <TR>
+      <TD><DIV align="right">来自：</DIV></TD>
+      <TD><LABEL>
+        <SELECT name="select">
+          <OPTION value="1">北京</OPTION>
+          <OPTION value="2">上海</OPTION>
+          <OPTION value="3">广州</OPTION>
+        </SELECT>
+      </LABEL></TD>
+    </TR>
+    <TR>
+      <TD><DIV align="right">爱好：</DIV></TD>
+      <TD><LABEL>
+        <INPUT name="checkbox" type="checkbox" value="checkbox" checked>
+        篮球
+      </LABEL>
+        <LABEL>
+        <INPUT type="checkbox" name="checkbox2" value="checkbox">
+      </LABEL>
+        <LABEL>
+        足球
+        <INPUT type="checkbox" name="checkbox3" value="checkbox">
+      水球</LABEL></TD>
+    </TR>
+    <TR>
+      <TD><DIV align="right">备注：</DIV></TD>
+      <TD><LABEL>
+        <TEXTAREA name="textfield" cols="40" rows="5"></TEXTAREA>
+      </LABEL></TD>
+    </TR>
+    <TR>
+      <TD><DIV align="right">
+        <LABEL>
+        <INPUT type="submit" name="Submit" value="提交">
+        </LABEL>
+      </DIV></TD>
+      <TD><LABEL>
+        <INPUT type="reset" name="Submit2" value="重置">
+      </LABEL></TD>
+    </TR>
+  </TABLE>
+</FORM>
+</BODY>
+</HTML>

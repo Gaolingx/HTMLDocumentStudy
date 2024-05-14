@@ -1,0 +1,651 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0061)http://blog.donews.com/liuren/archive/2007/03/14/1140222.aspx -->
+<HTML><HEAD><TITLE>xue24网络媒体教程备课资料之二《w3c:CSS+DIV》 - 刘韧Blog - DonewsBlog</TITLE>
+<META content="MSHTML 6.00.3790.4026" name=GENERATOR>
+<META http-equiv=Content-Type content="text/html; charset=utf-8"><LINK media=all 
+href="W3C和层布局的关系_files/style.css" type=text/css rel=stylesheet><LINK media=all 
+href="W3C和层布局的关系_files/blue.css" type=text/css rel=stylesheet><LINK media=all 
+href="W3C和层布局的关系_files/customcss.css" type=text/css rel=stylesheet><LINK 
+media=print href="W3C和层布局的关系_files/print.css" type=text/css rel=stylesheet><LINK 
+title=RSS href="http://blog.donews.com/liuren/rss.aspx" type=application/rss+xml 
+rel=alternate></HEAD>
+<BODY>
+<SCRIPT language=javascript src="W3C和层布局的关系_files/js.js"></SCRIPT>
+
+<SCRIPT language=javascript>
+	<!--
+		function getObject(objectId)
+		{
+			if(document.getElementById)
+			{
+				return document.getElementById(objectId)
+			}
+			else if(document.all&&document.all(objectId))
+			{
+				return document.all(objectId)
+			}
+			else
+			{
+				return false
+			}
+		}
+		
+		function hideObject(objectId)
+		{
+			var obj=getObject(objectId);
+						
+			if(obj&&obj.style)
+			{
+				obj.style.display="none";					
+				return true
+			}
+			return false
+		}
+		
+		function showObject(objectId)
+		{
+			var obj=getObject(objectId);
+			if(obj&&obj.style)
+			{
+				obj.style.display="";
+				return true
+			}
+			return false
+		}
+		
+		function hideComment(){
+			hideObject("commentForm");
+			hideObject("commentform");
+			return;
+		}
+		
+		function showComment(){
+			return;
+		}
+		
+		
+		
+		function setCookie(name,value)
+{
+ var Days = 30; //此 cookie 将被保存 30 天
+ var exp  = new Date();    //new Date("December 31, 9998");
+ exp.setTime(exp.getTime() + Days*24*60*60*1000);
+ document.cookie = name + "="+ escape(value) +";expires="+ exp.toGMTString();
+}
+
+function getCookie(name)
+{
+ var arr = document.cookie.match(new RegExp("(^| )"+name+"=([^;]*)(;|$)"));
+ if(arr != null) return unescape(arr[2]); return null;
+}
+
+function setClientCookie(){
+	var chkRemember=getObject("PostComment.ascx_chkRemember");
+	if (chkRemember=null){
+	return;
+	}
+
+	if (chkRemember=true){
+		var textName =getObject("PostComment.ascx_tbName");
+		var textUrl=getObject("PostComment.ascx_tbUrl");
+	
+		if (textName!=null){
+			setCookie("Name",textName.value);
+		}
+	
+		if(textUrl!=null){
+			setCookie("Url",textUrl.value);
+		}
+	}	
+}
+
+function getClientCookie(){
+
+	var cookieName=getCookie("Name");
+	var cookieUrl=getCookie("Url");
+	
+	if (cookieName!=null){
+	var textName =getObject("PostComment.ascx_tbName");
+	textName.value=cookieName;
+	}
+	
+	if (cookieUrl!=null){
+	var textUrl=getObject("PostComment.ascx_tbUrl");
+	textUrl.value=cookieUrl;	
+	}
+}
+		
+			
+	//-->
+	
+	</SCRIPT>
+
+<FORM id=Form1 name=Form1 action=1140222.aspx method=post><INPUT type=hidden 
+name=__VIEWSTATE>
+<SCRIPT src="W3C和层布局的关系_files/prototype.ashx" type=text/javascript></SCRIPT>
+
+<SCRIPT src="W3C和层布局的关系_files/core.ashx" type=text/javascript></SCRIPT>
+
+<SCRIPT src="W3C和层布局的关系_files/converter.ashx" type=text/javascript></SCRIPT>
+
+<SCRIPT src="W3C和层布局的关系_files/Dottext.Web.UI.Controls.Comments,Dottext.Web.ashx" 
+type=text/javascript></SCRIPT>
+
+<SCRIPT 
+src="W3C和层布局的关系_files/Dottext.Web.UI.Controls.RecentComments,Dottext.Web.ashx" 
+type=text/javascript></SCRIPT>
+ 
+<H1 id=header><A class=headermaintitle id=Header1_HeaderTitle 
+href="http://blog.donews.com/liuren/">刘韧Blog</A></H1>
+<P id=tagline>互联生活每一天</P>
+<DIV id=main>
+<SCRIPT>function StorePage(){d=document;t=d.selection?(d.selection.type!='None'?d.selection.createRange().text:''):(d.getSelection?d.getSelection():'');void(keyit=window.open('http://www.365key.com/storeit.aspx?t='+escape(d.title)+'&u='+escape(d.location.href)+'&c='+escape(t),'keyit','scrollbars=no,width=475,height=575,left=75,top=20,status=no,resizable=yes'));keyit.focus();}</SCRIPT>
+
+<DIV class=post>
+<DIV class=postTitle><A 
+href="http://blog.donews.com/liuren/archive/2007/03/14/1140222.aspx">xue24网络媒体教程备课资料之二《w3c:CSS+DIV》</A></DIV>
+<DIV class=postText>
+<P>　　W3C<BR>　　1989 年 Tim Berners-Lee&nbsp; 发明了万维网 。他在 
+1990年10月创造“万维网”这个名称，编写了第一个万维网服务器 "httpd" 和第一个客户端程序 (浏览器和编辑器) 
+"WorldWideWeb"。1990年10月，他编写了“超文本标记语言”(HTML) 
+的最初版本，这个格式化的文档包含了现在已成为主要万维网发布格式的超文本链接。随著万维网技术的传播，他最初提出的 URIs、HTTP 和 HTML 
+更见精炼及被广泛讨论。</P>
+<P>　　1994年10月，在 DARP 和欧洲委员会的支持下，Tim Berners-Lee 与欧洲核研究组织 (CERN) 
+合作，在万维网的发源地麻省理工大学计算机科学实验室 [MIT/LCS] 创立了万维网联盟 (W3C)。</P>
+<P>　　为解决 Web 应用中不同平台、技术和开发者带来的不兼容问题，保障 Web 信息的顺利和完整流通，万维网联盟制定了一系列标准并督促 Web 
+应用开发者和内容提供者遵循这些标准。标准的内容包括使用语言的规范，开发中使用的导则和解释引擎的行为等等。W3C也制定了包括XML和CSS等的众多影响深远的标准规范。 
+但是，W3C 制定的 web 
+标准似乎并非强制而只是推荐标准。因此部分网站仍然不能完全实现这些标准。特别是使用早期所见即所得网页编辑软件设计的网页往往会包含大量非标准代码。</P>
+<P>&nbsp;</P>
+<P>　　CSS<BR>　　层叠样式表，简写为CSS，是英语Cascading Style 
+Sheets的缩写。它是W3C定义和维护的标准，一种用来为结构化文档（如HTML文档或XML应用）添加样式（字体、间距和颜色等）的计算机语言。</P>
+<P>　　CSS最重要的目标是将文件的内容与它的显示分隔开来。在CSS出现前，几乎所有的HTML文件内都包含文件显示的信息，比如字体的颜色、背景应该是怎样的、如何排列、边缘、连线等等都必须一一在HTML文件内列出，有时重复列出。CSS使作者可以将这些信息中的大部分隔离出来，简化HTML文件，这些信息被放在一个辅助的，用CSS语言写的文件中。HTML文件中只包含结构和内容的信息，CSS文件中只包含样式的信息。</P>
+<P>　　比如HTML中h2标志这一个二级标题，它在级别上比一级标题h1低，比三级标题h3高。这些信息都是结构上的信息。</P>
+<P>　　一般来说级别越高的标题其字体也越大，h1的字体最大，因为一般来说字体越大它表示的内容就越重要，此外一般标题都使用粗体字，来突出它们的重要性。一般来说h2使用粗体字，其字体比h3大，比h1小。这些信息是显示用的信息。</P>
+<P>　　在CSS出现前，假如作者要确定h2标题的颜色、字形、大小或其它显示特征的话，他要使用HTML中的font或其它样式指令，光h2不够，因为h2只是一个结构指令。假如一个标题要用斜体字、红色的字符、白色的底色的话，作者要这样写：</P>
+<P>　　&lt;h2&gt;&lt;font color="red" 
+bgcolor="white"&gt;&lt;i&gt;使用CSS&lt;/i&gt;&lt;/font&gt;&lt;/h2&gt;</P>
+<P>　　这些显示用的指令使得一个HTML变得非常复杂，要维护也比较困难。假如所有的二级标题都要这样来显示的话，所有的二级标题的指令都要这么复杂。此外读者无法改变这些规定，假如一个读者更喜欢蓝色的标题的话，他无法改变标题的颜色，因为文件的作者特别规定了标题的颜色。</P>
+<P>　　使用CSS的话h2指令只规定文章的结构，其显示由样式表来规定，上面的例子可以变成这样：</P>
+<P>　　&lt;h2&gt;使用CSS&lt;/h2&gt;</P>
+<P>　　服从的样式表可以规定h2指令使用斜体字，红色字和白色背景：</P>
+<P>　　h2 { color: red; background: white; font-style: italic; }</P>
+<P>　　这样显示与内容就分开了。（由于CSS的优点，W3C现在正在考虑将HTML中的许多显示用的指令废弃掉。）HTML只表达文章的结构，CSS表达所有的显示。CSS可以指示颜色、字形、排列、大小以及其它许多非视觉的表达方式，比如将一篇文件的内容读出来。</P>
+<P>　　CSS样式信息可以包含在一个附件中或包含在HTML文件内。读者可以使用多个样式表，在重复的情况下他可以选择其中之一。不同的媒体可以使用不同的样式表。比如一个文件在荧光屏上的显示可以与在打印机中打印出来的显示不同。这样作者可以为不同的媒体设计最佳的显示方式。此外CSS的目标之一是让读者有更大的控制显示的自由。假如一个读者觉得斜体字的标题读起来很困难，他可以使用自己的样式表文件，这个样式表可以“层叠”使用，他可以只改变红色斜体字这个样式而保留所有其它的样式。</P>
+<P>CSS+DIV</P>
+<P>　　DIV是一个一个容器，用来装内容。比如，一个容器装标题，一个容器装正文，一个容器装作者、一个容器装相关文章，如此等等。在W3C中，作为容器的DIV里面装的都是TXT=纯内容。至于每个DIV内容的展现形式，再用CSS来定义，比如这个内容放在页面的哪个位置，字体字号字的颜色，如此等等。针对一“组”的形式用class定义，可反复使用；针对“个别”的形式展现用ID来定义。</P>
+<P>　　使用CSS+DIV取代传统的表格页面好处是：展现方式和内容分离。DIV和后台的内容输出程序对接之后，今后随便地换CSS就和程序无关了。这样网站改版就和程序无关了。极大的降低了改版的成本。可以让网站的改版随时随地进行。<BR></P><BR><BR>
+<P id=TBPingURL>Trackback: 
+http://tb.donews.net/TrackBack.aspx?PostId=1140222</P><BR></DIV>
+<DIV class=postFoot>[<A 
+href="javascript:StorePage()">点击此处收藏本文</A>]&nbsp;&nbsp;发表于2007年03月14日 5:31 
+PM</DIV></DIV><LINK href="http://blog.donews.com/liuren/Services/Pingback.aspx" 
+rel=pingback><!--<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"xmlns:dc="http://purl.org/dc/elements/1.1/"xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/"><rdf:Descriptionrdf:about="http://blog.donews.com/liuren/archive/2007/03/14/1140222.aspx"dc:identifier="http://blog.donews.com/liuren/archive/2007/03/14/1140222.aspx"dc:title="xue24网络媒体教程备课资料之二《w3c:CSS+DIV》"trackback:ping="http://tb.donews.net/TrackBack.aspx?PostId=1140222" /></rdf:RDF>-->
+<SCRIPT>function hide(){showComment();}</SCRIPT>
+<BR>
+<DIV align=center><BR><BR></DIV><BR>
+<DIV id=comText>正在读取评论……</DIV>
+<SCRIPT type=text/javascript>
+<!--
+	var url=window.location.href;	
+	ajaxRead(getCommentFileName(url),1);
+//-->
+</SCRIPT>
+
+<DIV class=CommentForm id=commentform>
+<H3>发表评论</H3>
+<TABLE class=CommentForm>
+  <TBODY>
+  <TR>
+    <TD width=69 height=0></TD>
+    <TD></TD></TR>
+  <TR>
+    <TD width=70>大名：</TD>
+    <TD align=left><INPUT id=PostComment.ascx_tbName style="WIDTH: 300px" 
+      size=40 name=PostComment.ascx:tbName> </TD></TR>
+  <TR>
+    <TD width=70>网址：</TD>
+    <TD align=left><INPUT id=PostComment.ascx_tbUrl style="WIDTH: 300px" 
+      size=40 name=PostComment.ascx:tbUrl> </TD></TR>
+  <TR>
+    <TD>验证码</TD>
+    <TD><INPUT id=PostComment.ascx_ValidationKey style="WIDTH: 150px" 
+      name=PostComment.ascx:ValidationKey> <IMG 
+      src="W3C和层布局的关系_files/VKImage.jpg" align=absMiddle> </TD></TR>
+  <TR>
+    <TD colSpan=3>评论&nbsp; <BR><TEXTAREA id=PostComment.ascx_tbComment style="WIDTH: 381px; HEIGHT: 193px" name=PostComment.ascx:tbComment rows=10 cols=50></TEXTAREA> 
+    </TD></TR>
+  <TR>
+    <TD colSpan=3><INPUT language=javascript class=Button id=PostComment.ascx_btnSubmit onclick="setClientCookie();if (typeof(Page_ClientValidate) == 'function') Page_ClientValidate(); " type=submit value=提交 name=PostComment.ascx:btnSubmit>&nbsp;&nbsp;&nbsp; 
+      <INPUT id=PostComment.ascx_chkRemember type=checkbox 
+      name=PostComment.ascx:chkRemember><LABEL 
+      for=PostComment.ascx_chkRemember>记住我？</LABEL></TD></TR>
+  <TR>
+    <TD colSpan=3><SPAN id=PostComment.ascx_Message 
+    style="COLOR: red"></SPAN></TD></TR></TBODY></TABLE></DIV></DIV>
+<DIV id=rightmenu>
+<H3>news</H3>
+<SCRIPT src="W3C和层布局的关系_files/myequcode.htm" type=text/javascript></SCRIPT>
+
+<SCRIPT type=text/javascript><!--
+google_ad_client = "pub-7086487425098838";
+google_ad_width = 110;
+google_ad_height = 32;
+google_ad_format = "110x32_as_rimg";
+google_cpa_choice = "CAAQleSfnAIaCLEYkAnqpyd8KOWkwXU";
+google_ad_channel = "";
+//--></SCRIPT>
+
+<SCRIPT src="W3C和层布局的关系_files/show_ads.js" type=text/javascript>
+</SCRIPT>
+
+<SCRIPT type=text/javascript><!--
+google_ad_client = "pub-7086487425098838";
+google_ad_width = 110;
+google_ad_height = 32;
+google_ad_format = "110x32_as_rimg";
+google_cpa_choice = "CAAQvKOU_AEaCMjb-vm8Brj8KKzx9IMB";
+google_ad_channel = "";
+//--></SCRIPT>
+
+<SCRIPT src="W3C和层布局的关系_files/show_ads.js" type=text/javascript>
+</SCRIPT>
+
+<SCRIPT language=javascript src="W3C和层布局的关系_files/taiji.htm" 
+type=text/javascript></SCRIPT>
+<BR><A href="http://www.365key.com/group/netmedia/" target=_blank><FONT 
+color=red size=5>《网络媒体研究》电子报</FONT></A> <BR><A 
+href="http://inout.donews.com/clickin.php?siteid=2827" target=_blank>
+<SCRIPT language=javascript src="W3C和层布局的关系_files/adutf8.js" 
+type=text/javascript></SCRIPT>
+</A>
+<UL class=list>
+  <SCRIPT src="W3C和层布局的关系_files/HotArticleList.htm"></SCRIPT>
+</UL><!-- Start of StatCounter Code -->
+<SCRIPT language=javascript type=text/javascript>
+var sc_project=655267; 
+var sc_partition=5; 
+var sc_security="86870e7d"; 
+</SCRIPT>
+
+<LI><A 
+href="http://www.bloglines.com/sub/http://www.donews.net/liuren/Rss.aspx">通过bloglines订阅</A> 
+
+<LI><A 
+href="http://www.topim.com/sub/http://www.donews.net/liuren/Rss.aspx">使用topim订阅</A> 
+
+<LI><A 
+href="http://add.my.yahoo.com/rss?url=http%3A//www.donews.net/liuren/Rss.aspx">添加到myyahoo</A><BR><IMG 
+height=21 src="W3C和层布局的关系_files/o_email.gif" width=143><BR>
+<H3>最近更新</H3>
+<UL class=list id=my_last_post></UL>
+<UL class=list>
+  <LI>
+  <SCRIPT type=text/javascript><!-- 
+var xmlhttp = false; 
+function load_rss() 
+{ 
+xmlhttp = false; 
+if (window.XMLHttpRequest) 
+{ 
+xmlhttp = new XMLHttpRequest(); 
+if (xmlhttp.overrideMimeType) 
+{ 
+xmlhttp.overrideMimeType('text/xml'); 
+} 
+} 
+else if (window.ActiveXObject) 
+{ 
+try 
+{ 
+xmlhttp = new ActiveXObject("Msxml2.XMLHTTP"); 
+} 
+catch (e) 
+{ 
+try 
+{ 
+xmlhttp = new ActiveXObject(" Microsoft.XMLHTTP"); 
+} 
+catch(e) 
+{ 
+} 
+} 
+} 
+if(!xmlhttp) 
+{ 
+return; 
+} 
+xmlhttp.onreadystatechange = proc_rss; 
+xmlhttp.open('GET', '/liuren/rss.aspx', true); 
+xmlhttp.send(null); 
+} 
+
+function proc_rss() 
+{ 
+if (xmlhttp.readyState == 4) 
+{ 
+if (xmlhttp.status == 200) 
+{ 
+var items = xmlhttp.responseXML.getElementsByTagName ('item'); 
+var l = 8; 
+if(items.length < 8) 
+{ 
+l = items.length; 
+} 
+var html = ''; 
+for (var i = 0; i < l; i++) 
+{ 
+html = html + get_item(items, i); 
+} 
+var obj = document.getElementById('my_last_post'); 
+if(obj) 
+{ 
+obj.innerHTML = html; 
+} 
+} 
+} 
+} 
+
+function get_item(items, id) 
+{ 
+var link = items[id].getElementsByTagName('link').item(0).firstChild.nodeValue; 
+var title = items[id].getElementsByTagName('title').item(0).firstChild.nodeValue; 
+var item = '<li ><a href="' + link + '">' + title + '</a></li>'; 
+return item; 
+} 
+load_rss(); 
+//--> 
+</SCRIPT>
+
+  <H3>和本站换链接，点击更多→注册即可</H3>
+  <SCRIPT language=javascript src="W3C和层布局的关系_files/getlist.htm" 
+  type=text/javascript></SCRIPT>
+
+  <SCRIPT src="W3C和层布局的关系_files/jsDays.htm" type=text/javascript></SCRIPT>
+  <IMG style="WIDTH: 100px; HEIGHT: 133px" height=133 alt="click to enlarge" 
+  hspace=0 src="W3C和层布局的关系_files/o_2.jpg" width=100 border=0><BR>
+  <H3>导航</H3>
+  <UL>
+    <LI><A id=MyLinks1_HomeLink title=到聚合站点 
+    href="http://blog.donews.com/">DonewsBlog</A> 
+    <LI><A href="http://www.donews.com/" target=_blank>Donews首页</A> 
+    <LI><A href="http://home.donews.com/" target=_blank>Donews社区</A> 
+    <LI><A href="http://mail.donews.com/" target=_blank>Donews邮箱</A> 
+    <LI><A id=MyLinks1_PersonalHome title="访问 刘韧Blog" 
+    href="http://blog.donews.com/liuren/">我的首页</A> 
+    <LI><A id=MyLinks1_ContactLink accessKey=9 
+    href="http://blog.donews.com/liuren/contact.aspx">联系作者</A> 
+    <LI><A id=MyLinks1_Admin 
+    href="http://writeblog.donews.com/editposts.aspx">登录</A> 
+    <LI><A id=MyLinks1_Syndication 
+    href="http://blog.donews.com/liuren/Rss.aspx">聚合</A><A id=MyLinks1_XMLLink 
+    href="http://blog.donews.com/liuren/Rss.aspx"><IMG alt="" 
+    src="W3C和层布局的关系_files/xml.gif" border=0></A> </LI></UL>
+  <H3>blog stats</H3>
+  <UL>
+    <LI>posts - 535 
+    <LI>stories - 1 
+    <LI>comments - 8521 
+    <LI>trackbacks - 520 </LI></UL>
+  <H3 class=listtitle>文章</H3>
+  <UL class=list>
+    <LI class=listitem><A 
+    href="http://blog.donews.com/liuren/category/86369.aspx">日记</A><A 
+    href="http://blog.donews.com/liuren/category/86369.aspx/rss">(RSS)</A>
+    <LI class=listitem><A 
+    href="http://blog.donews.com/liuren/category/85925.aspx">网络媒体</A><A 
+    href="http://blog.donews.com/liuren/category/85925.aspx/rss">(RSS)</A>
+    <LI class=listitem><A 
+    href="http://blog.donews.com/liuren/category/86370.aspx">业界</A><A 
+    href="http://blog.donews.com/liuren/category/86370.aspx/rss">(RSS)</A></LI></UL>
+  <H3 class=listtitle>收藏</H3>
+  <UL class=list></UL>
+  <H3 class=listtitle>相册</H3><!--category title-->
+  <UL class=list>
+    <LI class=listitem><A 
+    href="http://blog.donews.com/liuren/Gallery/12.aspx">家庭</A>
+    <LI class=listitem><A 
+    href="http://blog.donews.com/liuren/Gallery/38404.aspx">新闻</A></LI></UL>
+  <H3 class=listtitle>工作</H3>
+  <UL class=list>
+    <LI class=listitem><A href="http://www.donews.com/" 
+    target=_blank>IT社区&amp;媒体平台</A>
+    <LI class=listitem><A href="http://blog.donews.com/longrujun" 
+    target=_blank>沧海笑一声</A><A href="http://blog.donews.com/longrujun/Rss.aspx" 
+    target=_blank>(RSS)</A>
+    <LI class=listitem><A href="http://www.365key.com/liuren" 
+    target=_blank>订阅我每日精选的IT新闻</A>
+    <LI class=listitem><A href="http://blog.donews.com/henryhwa/" 
+    target=_blank>老华日记</A><A href="http://blog.donews.com/henryhwa/Rss.aspx" 
+    target=_blank>(RSS)</A>
+    <LI class=listitem><A href="http://liuren.donews.com/" 
+    target=_self>刘韧DoNews专栏</A>
+    <LI class=listitem><A href="http://www.365key.com/group/netmedia" 
+    target=_blank>刘韧的《网络媒体研究》群组</A><A 
+    href="http://www.365key.com/rssfeed.aspx?groupid=2580" 
+    target=_blank>(RSS)</A>
+    <LI class=listitem><A href="http://liuren.i.donews.com/" 
+    target=_blank>刘韧的个人门户</A>
+    <LI class=listitem><A href="http://www.liuren.com/" target=_blank>我的个人主页</A>
+    <LI class=listitem><A href="http://www.it5g.com/" target=_blank>五季咨询</A>
+    <LI class=listitem><A href="http://www.xue24.com/" 
+    target=_blank>新宇博士的xue24.com</A>
+    <LI class=listitem><A href="http://www.irunnet.com/" target=_blank>运维网</A>
+    <LI class=listitem><A href="http://www.zhangdongwei.com/" 
+    target=_blank>张栋伟经理</A>
+    <LI class=listitem><A 
+    href="http://www.liuren.com/liuren2000/zsyx/index.htm#中关村三部曲" 
+    target=_self>中关村三部曲</A>
+    <LI class=listitem><A href="http://www.chinatochina.com/" 
+    target=_blank>中国IT书签</A></LI></UL>
+  <H3 class=listtitle>关注</H3>
+  <UL class=list>
+    <LI class=listitem><A href="http://www.dvdfaq.com.cn/" 
+    target=_blank>DVD知识库</A>
+    <LI class=listitem><A href="http://blog.donews.com/aigaogao/" 
+    target=_self>爱搞搞</A><A href="http://blog.donews.com/aigaogao/rss.aspx" 
+    target=_blank>(RSS)</A>
+    <LI class=listitem><A href="http://www.donews.net/chennian" 
+    target=_blank>陈年文学中年</A>
+    <LI class=listitem><A href="http://www.donews.net/darlin" 
+    target=_blank>大林热心</A>
+    <LI class=listitem><A href="http://www.dashou.com.cn/" target=_self>大手幸福</A>
+    <LI class=listitem><A href="http://guoguozhen.com/" target=_self>郭国振经济</A>
+    <LI class=listitem><A href="http://www.donews.net/keso" 
+    target=_blank>洪波总编</A>
+    <LI class=listitem><A href="http://www.donews.net/virushuo/" 
+    target=_blank>霍炬技术观点</A>
+    <LI class=listitem><A href="http://www.donews.net/jinhongwei/" 
+    target=_blank>金宏伟人文关怀</A>
+    <LI class=listitem><A href="http://blog.donews.com/laobai/" 
+    target=_blank>老白观点</A>
+    <LI class=listitem><A href="http://www.donews.net/tycoo" 
+    target=_blank>老牛观察</A>
+    <LI class=listitem><A href="http://www.donews.net/sunnyliang" 
+    target=_blank>梁宁闲情</A>
+    <LI class=listitem><A href="http://blog.donews.com/liushu" 
+    target=_self>刘书散文</A>
+    <LI class=listitem><A href="http://blog.donews.com/xasf" 
+    target=_blank>吕欣欣2.0</A>
+    <LI class=listitem><A href="http://www.donews.net/fanggang" 
+    target=_blank>搜狐方刚</A>
+    <LI class=listitem><A href="http://www.donews.net/wangle" 
+    target=_self>王乐游戏</A>
+    <LI class=listitem><A href="http://www.donews.net/bingshu" 
+    target=_self>王磊逗趣</A>
+    <LI class=listitem><A href="http://blog.donews.com/shaoleiwang" 
+    target=_self>王少磊老师</A>
+    <LI class=listitem><A href="http://www.donews.net/qiu123" 
+    target=_blank>咸鱼翻身</A><A href="http://blog.donews.com/qiu123/Rss.aspx" 
+    target=_blank>(RSS)</A>
+    <LI class=listitem><A href="http://blog.donews.com/nina/" 
+    target=_self>娴言闲语</A><A href="http://blog.donews.com/nina/Rss.aspx" 
+    target=_blank>(RSS)</A>
+    <LI class=listitem><A href="http://spaces.msn.com/members/hellovv/" 
+    target=_blank>小女子戴薇</A>
+    <LI class=listitem><A href="http://www.donews.net/xinhaiguang" 
+    target=_self>信海光感性破坏性</A>
+    <LI class=listitem><A href="http://blog.donews.com/yanhui/" 
+    target=_blank>闫辉软件</A><A href="http://blog.donews.com/yanhui/rss.aspx" 
+    target=_blank>(RSS)</A>
+    <LI class=listitem><A 
+    href="http://www.enjoyabc.com/blog/userblog.asp?userid=11" 
+    target=_blank>叶逸飞blog</A>
+    <LI class=listitem><A href="http://www.donews.net/zrde" 
+    target=_blank>张锐思考</A>
+    <LI class=listitem><A href="http://blog.donews.com/keepwalking" 
+    target=_self>走着沉思</A><A href="http://blog.donews.com/keepwalking/Rss.aspx" 
+    target=_blank>(RSS)</A></LI></UL>
+  <H3 class=listtitle>交换链接</H3>
+  <UL class=list>
+    <LI class=listitem><A href="http://blog.donews.com/chenta" 
+    target=_self>Chenta梦想实验室</A><A href="http://feeds.feedburner.com/chenta" 
+    target=_blank>(RSS)</A>
+    <LI class=listitem><A href="http://www.downwo.com/" target=_blank>DownWo</A>
+    <LI class=listitem><A href="http://www.silbo.net/" target=_blank>Silbo &amp; 
+    Cactus</A>
+    <LI class=listitem><A href="http://www.bio1.com.cn/" target=_blank>博网</A>
+    <LI class=listitem><A href="http://www.hongxiu.com/" target=_blank>红袖添香</A>
+    <LI class=listitem><A href="http://blog.esnai.com/" target=_blank>会计博客</A>
+    <LI class=listitem><A href="http://www.gallonwang.com/" 
+    target=_blank>佳伦互联网知识管理</A>
+    <LI class=listitem><A href="http://www.blogwhy.com/" 
+    target=_blank>蒋胜蓝blogwhy</A>
+    <LI class=listitem><A href="http://blog.donews.com/llf/" 
+    target=_blank>零零发</A><A href="http://blog.donews.com/llf/Rss.aspx" 
+    target=_blank>(RSS)</A>
+    <LI class=listitem><A href="http://my.donews.com/downwo" 
+    target=_blank>破解下载</A>
+    <LI class=listitem><A href="http://downwo.spaces.live.com/" 
+    target=_blank>破解下载</A>
+    <LI class=listitem><A href="http://shangyeguanli.bokee.com/" 
+    target=_blank>商业故事</A><A href="http://shangyeguanli.blogchina.com/rss2.xml" 
+    target=_blank>(RSS)</A>
+    <LI class=listitem><A href="http://blog.donews.com/Zand123/" 
+    target=_self>烧海</A><A href="http://blog.donews.com/Zand123/rss.aspx" 
+    target=_blank>(RSS)</A>
+    <LI class=listitem><A href="http://blog.donews.com/moriz13/" 
+    target=_blank>十三郎</A><A href="http://blog.donews.com/moriz13/Rss.aspx" 
+    target=_blank>(RSS)</A>
+    <LI class=listitem><A href="http://www.ziye114.com/" 
+    target=_blank>紫页114</A></LI></UL>
+  <H3 class=listtitle>我维护的Wiki的词条</H3>
+  <UL class=list>
+    <LI class=listitem><A href="http://wiki.donews.com/index.php/ITä¹¦ç&shy;¾" 
+    target=_blank>IT书签</A>
+    <LI class=listitem><A href="http://wiki.donews.com/index.php/èªç¶ç&nbsp;" 
+    target=_blank>自然码</A></LI></UL>
+  <H3 class=listtitle>自动与本站交换链接</H3>
+  <UL class=list>
+    <LI class=listitem><A 
+    href="http://inout.donews.com/sp.php?siteid=2827&amp;fenlei=0000" 
+    target=_blank>自动与本Blog交换链接</A></LI></UL>
+  <H3 class=listtitle>存档</H3>
+  <UL class=list>
+    <LI><A 
+    href="http://blog.donews.com/liuren/archive/2007/10.aspx">2007年10月(7)</A>
+    <LI><A 
+    href="http://blog.donews.com/liuren/archive/2007/09.aspx">2007年09月(4)</A>
+    <LI><A 
+    href="http://blog.donews.com/liuren/archive/2007/08.aspx">2007年08月(2)</A>
+    <LI><A 
+    href="http://blog.donews.com/liuren/archive/2007/07.aspx">2007年07月(6)</A>
+    <LI><A 
+    href="http://blog.donews.com/liuren/archive/2007/06.aspx">2007年06月(9)</A>
+    <LI><A 
+    href="http://blog.donews.com/liuren/archive/2007/05.aspx">2007年05月(10)</A>
+    <LI><A 
+    href="http://blog.donews.com/liuren/archive/2007/04.aspx">2007年04月(11)</A>
+    <LI><A 
+    href="http://blog.donews.com/liuren/archive/2007/03.aspx">2007年03月(9)</A>
+    <LI><A 
+    href="http://blog.donews.com/liuren/archive/2007/02.aspx">2007年02月(11)</A>
+    <LI><A 
+    href="http://blog.donews.com/liuren/archive/2007/01.aspx">2007年01月(6)</A>
+    <LI><A 
+    href="http://blog.donews.com/liuren/archive/2006/12.aspx">2006年12月(2)</A>
+    <LI><A 
+    href="http://blog.donews.com/liuren/archive/2006/11.aspx">2006年11月(7)</A>
+    <LI><A 
+    href="http://blog.donews.com/liuren/archive/2006/10.aspx">2006年10月(17)</A>
+    <LI><A 
+    href="http://blog.donews.com/liuren/archive/2006/09.aspx">2006年09月(14)</A>
+    <LI><A 
+    href="http://blog.donews.com/liuren/archive/2006/08.aspx">2006年08月(2)</A>
+    <LI><A 
+    href="http://blog.donews.com/liuren/archive/2006/07.aspx">2006年07月(8)</A>
+    <LI><A 
+    href="http://blog.donews.com/liuren/archive/2006/06.aspx">2006年06月(23)</A>
+    <LI><A 
+    href="http://blog.donews.com/liuren/archive/2006/05.aspx">2006年05月(31)</A>
+    <LI><A 
+    href="http://blog.donews.com/liuren/archive/2006/04.aspx">2006年04月(26)</A>
+    <LI><A 
+    href="http://blog.donews.com/liuren/archive/2006/03.aspx">2006年03月(23)</A>
+    <LI><A 
+    href="http://blog.donews.com/liuren/archive/2006/02.aspx">2006年02月(32)</A>
+    <LI><A 
+    href="http://blog.donews.com/liuren/archive/2006/01.aspx">2006年01月(35)</A>
+    <LI><A 
+    href="http://blog.donews.com/liuren/archive/2005/12.aspx">2005年12月(31)</A>
+    <LI><A 
+    href="http://blog.donews.com/liuren/archive/2005/11.aspx">2005年11月(35)</A>
+    <LI><A 
+    href="http://blog.donews.com/liuren/archive/2005/10.aspx">2005年10月(24)</A>
+    <LI><A 
+    href="http://blog.donews.com/liuren/archive/2005/09.aspx">2005年09月(26)</A>
+    <LI><A 
+    href="http://blog.donews.com/liuren/archive/2005/08.aspx">2005年08月(34)</A>
+    <LI><A 
+    href="http://blog.donews.com/liuren/archive/2005/07.aspx">2005年07月(23)</A>
+    <LI><A 
+    href="http://blog.donews.com/liuren/archive/2005/06.aspx">2005年06月(21)</A>
+    <LI><A 
+    href="http://blog.donews.com/liuren/archive/2005/05.aspx">2005年05月(21)</A>
+    <LI><A 
+    href="http://blog.donews.com/liuren/archive/2005/04.aspx">2005年04月(17)</A>
+    <LI><A 
+    href="http://blog.donews.com/liuren/archive/2005/03.aspx">2005年03月(1)</A>
+    <LI><A 
+    href="http://blog.donews.com/liuren/archive/2005/02.aspx">2005年02月(1)</A>
+    <LI><A 
+    href="http://blog.donews.com/liuren/archive/2005/01.aspx">2005年01月(6)</A>
+    <LI><A 
+    href="http://blog.donews.com/liuren/archive/2004/11.aspx">2004年11月(3)</A>
+    <LI><A 
+    href="http://blog.donews.com/liuren/archive/2004/10.aspx">2004年10月(2)</A>
+    <LI><A 
+    href="http://blog.donews.com/liuren/archive/2004/09.aspx">2004年09月(1)</A>
+    <LI><A 
+    href="http://blog.donews.com/liuren/archive/2004/08.aspx">2004年08月(5)</A>
+    <LI><A 
+    href="http://blog.donews.com/liuren/archive/2004/07.aspx">2004年07月(2)</A>
+    <LI><A 
+    href="http://blog.donews.com/liuren/archive/2004/06.aspx">2004年06月(8)</A>
+    <LI><A 
+    href="http://blog.donews.com/liuren/archive/2004/03.aspx">2004年03月(2)</A>
+    <LI><A 
+    href="http://blog.donews.com/liuren/archive/2004/02.aspx">2004年02月(4)</A>
+    <LI><A 
+    href="http://blog.donews.com/liuren/archive/2004/01.aspx">2004年01月(5)</A>
+    <LI><A 
+    href="http://blog.donews.com/liuren/archive/2003/12.aspx">2003年12月(6)</A></LI></UL><BR>
+  <DIV id=comRecText>正在读取评论……</DIV>
+  <SCRIPT type=text/javascript>
+<!--
+	var urlRec=window.location.href;
+	
+	var fileRec=getRecFileName(urlRec);
+	ajaxRead(fileRec,0);		
+
+//-->
+</SCRIPT>
+  </LI></UL></LI></DIV></FORM>
+<SCRIPT type=text/script>
+	 <!--
+	 
+		getClientCookie();
+		
+	 //-->
+	 </SCRIPT>
+</BODY></HTML>

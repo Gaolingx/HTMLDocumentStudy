@@ -1,0 +1,1 @@
+document.write('<P><FONT color=#ff0000 size=2>挖新闻</FONT></P>')

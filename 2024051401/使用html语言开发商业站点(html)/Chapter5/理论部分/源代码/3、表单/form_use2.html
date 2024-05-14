@@ -1,0 +1,95 @@
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=gb2312">
+<TITLE>表单的使用</TITLE>
+</HEAD>
+
+<BODY>
+<FORM action="www.register.com" method="post" enctype="multipart/form-data" name="register" id="register">
+  <TABLE width="100%" border="1" align="center" cellpadding="0" cellspacing="0" bordercolor="#99CCFF">
+    <TR>
+      <TD width="160"  align="right" bgcolor="#E7FBFF" class="register_table_line">登录名：</TD>
+      <TD><LABEL>
+        <INPUT type="text" name="textfield">
+      </LABEL></TD>
+    </TR>
+    <TR>
+      <TD width="160" align="right" bgcolor="#E7FBFF" class="register_table_line">密码：</TD>
+      <TD><LABEL>
+        <INPUT type="password" name="textfield2">
+      </LABEL></TD>
+    </TR>
+    <TR>
+      <TD width="160" align="right" bgcolor="#E7FBFF" class="register_table_line">再次输入密码：</TD>
+      <TD><LABEL>
+        <INPUT type="password" name="textfield3">
+      </LABEL></TD>
+    </TR>
+    <TR>
+      <TD width="160" align="right" bgcolor="#E7FBFF" class="register_table_line">电子邮箱：</TD>
+      <TD><LABEL>
+        <INPUT type="text" name="textfield4">
+      </LABEL></TD>
+    </TR>
+    <TR>
+      <TD width="160" align="right" bgcolor="#E7FBFF" class="register_table_line">性别：</TD>
+      <TD><P>
+        <LABEL>
+          <INPUT type="radio" name="RadioGroup1" value="单选">
+          男</LABEL>
+        <LABEL>
+        <INPUT type="radio" name="RadioGroup1" value="单选">
+          女</LABEL>
+        <BR>
+      </P></TD>
+    </TR>
+    <TR>
+      <TD width="160" align="right" bgcolor="#E7FBFF" class="register_table_line">爱好：</TD>
+      <TD><LABEL>
+        <INPUT type="checkbox" name="checkbox" value="checkbox">
+      </LABEL>
+        <LABEL>
+        <INPUT type="checkbox" name="checkbox2" value="checkbox">
+      </LABEL>
+        <LABEL>
+        <INPUT type="checkbox" name="checkbox3" value="checkbox">
+      </LABEL></TD>
+    </TR>
+    <TR>
+      <TD width="160" align="right" bgcolor="#E7FBFF" class="register_table_line">出生日期：</TD>
+      <TD><LABEL>
+        <INPUT name="textfield5" type="text" size="5">
+        <SELECT name="select">
+        </SELECT>
+      </LABEL>
+        <LABEL>
+        <INPUT name="textfield6" type="text" size="2">
+      </LABEL></TD>
+    </TR>
+    <TR>
+      <TD><LABEL>
+        <INPUT type="reset" name="Submit" value="重置">
+      </LABEL></TD>
+      <TD><LABEL>
+        <INPUT name="Submit2" type="submit" value="同意以下服务条款，提交注册信息">
+      </LABEL></TD>
+    </TR>
+    <TR>
+      <TD colspan="2"><LABEL>
+        <INPUT type="file" name="file">
+      </LABEL></TD>
+    </TR>
+    <TR>
+      <TD colspan="2"><P><IMG src="images/read.gif" width="35" height="26">阅读淘宝网服务协议</P>
+        <P>&nbsp;          </P>
+        <LABEL>
+        <TEXTAREA name="textarea"></TEXTAREA>
+        </LABEL>
+      <BR></TD>
+    </TR>
+  </TABLE>
+  <P>&nbsp;</P>
+  <P>&nbsp;</P>
+</FORM>
+</BODY>
+</HTML>

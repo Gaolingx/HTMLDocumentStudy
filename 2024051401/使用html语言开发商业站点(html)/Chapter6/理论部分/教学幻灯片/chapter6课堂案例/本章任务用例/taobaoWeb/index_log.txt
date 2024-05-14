@@ -1,0 +1,12 @@
+1、首页需要完善的细节：
+
+1)        导航表格出现的空白(表单标记放的位置导致的)
+
+2)        广告图片替换“小孩不宜”的图片，并添加超连接。注意检查一下其他地方有没有这样的图片(图片已替换)
+
+3)        点卡中的各层，用表格布局一下。(用表格可以防止光用层布局在不同浏览器之间显示的差异)
+
+4)<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+指定 HTML 文档遵循的文档类型定义(DTD)。
+Microsoft?? Internet Explorer 6 的新增内容
+你可使用此声明将 Internet Explorer 6 及以后版本切换到标准兼容模式下

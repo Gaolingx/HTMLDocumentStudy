@@ -1,0 +1,57 @@
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=gb2312">
+<TITLE>DIV+table布局的导航页</TITLE>
+<STYLE type="text/css">
+<!--
+#head {
+	position:absolute;
+	left:10px;
+	top:6px;
+	width:950px;
+	height:100px;
+	z-index:1;
+}
+#content {
+	position:absolute;
+	left:10px;
+	top:110px;
+	width:950px;
+	height:139px;
+	z-index:2;
+	background-color: #009900;
+}
+#foot {
+	position:absolute;
+	left:10px;
+	top:252px;
+	width:950px;
+	height:131px;
+	z-index:3;
+	background-color: #FFFF00;
+}
+-->
+</STYLE>
+</HEAD>
+
+<BODY>
+<DIV id="head">
+  <TABLE width="100%" border="0">
+    <TR>
+      <TD width="50%" rowspan="2"><IMG src="images/logo.gif" width="240" height="31"></TD>
+      <TD width="17%" align="right"><IMG src="images/banner_1.gif" width="51" height="24"></TD>
+      <TD width="6%" align="right"><IMG src="images/banner_2.gif" width="51" height="24"></TD>
+      <TD width="8%" align="right"><IMG src="images/banner_3.gif" width="73" height="24"></TD>
+      <TD width="5%" align="right"><IMG src="images/banner_4.gif" width="39" height="24"></TD>
+      <TD width="7%" align="right"><IMG src="images/banner_5.gif" width="62" height="24"></TD>
+      <TD width="7%" align="right"><IMG src="images/banner_6.gif" width="61" height="24"></TD>
+    </TR>
+    <TR>
+      <TD colspan="6" align="right">您好，欢迎来淘宝！[<A href="register/register.html" target="_blank">免费注册</A>][<A href="login/login.htm" target="_blank">登录</A>] 阿里旺旺  支付宝</TD>
+    </TR>
+  </TABLE>
+</DIV>
+<DIV id="content"></DIV>
+<DIV id="foot"></DIV>
+</BODY>
+</HTML>

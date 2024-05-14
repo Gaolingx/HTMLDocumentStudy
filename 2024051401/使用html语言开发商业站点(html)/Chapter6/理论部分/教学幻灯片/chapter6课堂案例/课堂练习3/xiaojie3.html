@@ -1,0 +1,53 @@
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=gb2312">
+<TITLE>小结3练习DIV+Table布局</TITLE>
+<STYLE type="text/css">
+<!--
+#Layer1 {
+	position:absolute;
+	left:12px;
+	top:6px;
+	width:950px;
+	height:100px;
+	z-index:1;
+	background-color: #00CC00;
+}
+#Layer2 {
+	position:absolute;
+	left:12px;
+	top:108px;
+	width:950px;
+	height:240px;
+	z-index:2;
+}
+#Layer3 {
+	position:absolute;
+	left:12px;
+	top:370px;
+	width:952px;
+	height:94px;
+	z-index:3;
+	background-color: #FF0000;
+}
+-->
+</STYLE>
+</HEAD>
+
+<BODY>
+<DIV id="Layer1"></DIV>
+<DIV id="Layer2">
+  <TABLE width="100%" border="0">
+    <TR>
+      <TD colspan="3"><IMG src="images/4zhounian.jpg" width="950" height="36"></TD>
+    </TR>
+    <TR>
+      <TD><IMG src="images/gonggaolan1.jpg" width="280" height="200"></TD>
+      <TD><IMG src="images/adv_1.jpg" width="360" height="200"></TD>
+      <TD align="left"><IMG src="images/adv_2.jpg" width="303" height="205"></TD>
+    </TR>
+  </TABLE>
+</DIV>
+<DIV id="Layer3"></DIV>
+</BODY>
+</HTML>

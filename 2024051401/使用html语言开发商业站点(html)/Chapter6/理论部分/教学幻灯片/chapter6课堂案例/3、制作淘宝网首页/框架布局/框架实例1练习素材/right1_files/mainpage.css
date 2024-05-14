@@ -1,0 +1,357 @@
+BODY {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+.chara1 {
+	FONT-SIZE: 12px; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+#toplink {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BACKGROUND: url(images/mainpage/button1.jpg) repeat-x 0px 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; WIDTH: 560px; PADDING-TOP: 0px; LIST-STYLE-TYPE: none; HEIGHT: 32px
+}
+#toplink LI {
+	FONT-SIZE: 12px; LEFT: -40px; FLOAT: left; WIDTH: 80px; FONT-FAMILY: Arial, Helvetica, sans-serif; POSITION: relative; HEIGHT: 32px; TEXT-ALIGN: center
+}
+#toplink LI A {
+	WIDTH: 80px; PADDING-TOP: 10px; POSITION: absolute; HEIGHT: 32px; TEXT-DECORATION: none
+}
+#toplink LI A:link {
+	COLOR: #003860
+}
+#toplink LI A:visited {
+	COLOR: #003860
+}
+#toplink LI A:hover {
+	BACKGROUND: url(images/mainpage/button2.jpg) no-repeat; COLOR: #ffffff; TEXT-DECORATION: none
+}
+#limain A.special:link {
+	BACKGROUND: url(images/mainpage/button2.jpg) no-repeat 0px 0px; COLOR: #ffffff
+}
+#limain A.special:visited {
+	BACKGROUND: url(images/mainpage/button2.jpg) no-repeat 0px 0px; COLOR: #ffffff
+}
+#limain A.special:hover {
+	BACKGROUND: url(images/mainpage/button2.jpg) no-repeat 0px 0px; COLOR: #ffffff
+}
+A.topright:link {
+	COLOR: #ffffff; TEXT-DECORATION: none
+}
+A.topright:visited {
+	COLOR: #ffffff; TEXT-DECORATION: none
+}
+A.topright:hover {
+	COLOR: #003860; TEXT-DECORATION: none
+}
+.title1 {
+	BACKGROUND: url(images/mainpage/title1_bg.jpg) repeat-x; HEIGHT: 28px; TEXT-ALIGN: left
+}
+.tdborder1 {
+	BORDER-RIGHT: #7093ff 1px solid; PADDING-RIGHT: 10px; BORDER-TOP: #7093ff 1px solid; PADDING-LEFT: 18px; PADDING-BOTTOM: 12px; VERTICAL-ALIGN: top; BORDER-LEFT: #7093ff 1px solid; PADDING-TOP: 13px; BORDER-BOTTOM: #7093ff 1px solid
+}
+A.title2 {
+	FONT-WEIGHT: bold
+}
+A.title2:link {
+	COLOR: #004d97; TEXT-DECORATION: underline
+}
+A.title2:visited {
+	COLOR: #004d97; TEXT-DECORATION: underline
+}
+A.title2:hover {
+	COLOR: #736700; TEXT-DECORATION: none
+}
+A.title3:link {
+	COLOR: #66a0ff; TEXT-DECORATION: none
+}
+A.title3:visited {
+	COLOR: #66a0ff; TEXT-DECORATION: none
+}
+A.title3:hover {
+	COLOR: #003a9b; TEXT-DECORATION: none
+}
+.content1 {
+	PADDING-LEFT: 10px; BACKGROUND: url(images/mainpage/dot1.gif) no-repeat 0px 5px
+}
+.content2 {
+	PADDING-LEFT: 13px; BACKGROUND: url(images/mainpage/dot2.gif) no-repeat 5px 6px
+}
+A.board1:link {
+	FONT-WEIGHT: bold; COLOR: #003a9b; TEXT-DECORATION: underline
+}
+A.board1:visited {
+	FONT-WEIGHT: bold; COLOR: #003a9b; TEXT-DECORATION: underline
+}
+A.board1:hover {
+	FONT-WEIGHT: bold; COLOR: #66a0ff; TEXT-DECORATION: none
+}
+A.title4:link {
+	COLOR: #000000; TEXT-DECORATION: none
+}
+A.title4:visited {
+	COLOR: #000000; TEXT-DECORATION: none
+}
+A.title4:hover {
+	COLOR: #003a9b; TEXT-DECORATION: none
+}
+A.author1:link {
+	COLOR: #0061ff; TEXT-DECORATION: none
+}
+A.author1:visited {
+	COLOR: #0061ff; TEXT-DECORATION: none
+}
+A.author1:hover {
+	COLOR: #003a9b; TEXT-DECORATION: line-through
+}
+A.board2:link {
+	COLOR: #176fff; TEXT-DECORATION: none
+}
+A.board2:visited {
+	COLOR: #176fff; TEXT-DECORATION: none
+}
+A.board2:hover {
+	COLOR: #000000; TEXT-DECORATION: underline
+}
+#toptenlist {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px; LIST-STYLE-TYPE: none
+}
+#toptenlist LI {
+	PADDING-LEFT: 8px; BACKGROUND: url(images/mainpage/dot3.gif) no-repeat 0px 5px; PADDING-BOTTOM: 6px; PADDING-TOP: 1px
+}
+.title5 {
+	PADDING-LEFT: 28px; BACKGROUND: url(images/mainpage/title2_bg.jpg) no-repeat; VERTICAL-ALIGN: middle; PADDING-TOP: 2px; HEIGHT: 24px
+}
+.boardlist {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 5px; LIST-STYLE-TYPE: none
+}
+.boardlist LI {
+	PADDING-RIGHT: 20px; DISPLAY: inline; PADDING-LEFT: 6px; BACKGROUND: url(images/mainpage/dot4.gif) no-repeat 0px 6px; PADDING-BOTTOM: 6px
+}
+.articlelist {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px; LIST-STYLE-TYPE: none
+}
+.articlelist LI {
+	PADDING-LEFT: 6px; BACKGROUND: url(images/mainpage/dot4.gif) no-repeat 0px 7px; PADDING-BOTTOM: 4px; PADDING-TOP: 1px
+}
+#time {
+	FONT-WEIGHT: bold; BACKGROUND: url(images/mainpage/time.jpg) no-repeat; COLOR: #ffffff; HEIGHT: 80px
+}
+#time P {
+	PADDING-RIGHT: 45px; MARGIN: 0px; LINE-HEIGHT: 20px; TEXT-ALIGN: center
+}
+#rightlist1 {
+	PADDING-LEFT: 0px; MARGIN: 0px; PADDING-TOP: 12px; LIST-STYLE-TYPE: none
+}
+#rightlist2 {
+	PADDING-LEFT: 0px; MARGIN: 0px; PADDING-TOP: 12px; LIST-STYLE-TYPE: none
+}
+#rightlist3 {
+	PADDING-LEFT: 0px; MARGIN: 0px; PADDING-TOP: 12px; LIST-STYLE-TYPE: none
+}
+#rightlist4 {
+	PADDING-LEFT: 0px; MARGIN: 0px; PADDING-TOP: 12px; LIST-STYLE-TYPE: none
+}
+#rightlist1 LI {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 13px; BACKGROUND: url(images/mainpage/arrow2.gif) no-repeat 6px 4px; PADDING-BOTTOM: 3px; PADDING-TOP: 1px
+}
+#rightlist2 LI {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 13px; BACKGROUND: url(images/mainpage/arrow2.gif) no-repeat 6px 4px; PADDING-BOTTOM: 3px; PADDING-TOP: 1px
+}
+#rightlist3 LI {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 13px; BACKGROUND: url(images/mainpage/arrow2.gif) no-repeat 6px 4px; PADDING-BOTTOM: 3px; PADDING-TOP: 1px
+}
+#rightlist4 LI {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 13px; BACKGROUND: url(images/mainpage/arrow2.gif) no-repeat 6px 4px; PADDING-BOTTOM: 3px; PADDING-TOP: 1px
+}
+A.title6:link {
+	COLOR: #004a8f; TEXT-DECORATION: none
+}
+A.title6:visited {
+	COLOR: #004a8f; TEXT-DECORATION: none
+}
+A.title6:hover {
+	COLOR: #000000; TEXT-DECORATION: underline
+}
+A:hover {
+	COLOR: #ff0000
+}
+TABLE.BODY {
+	BORDER-RIGHT: #cccccc 1px solid; BORDER-TOP: #cccccc 1px solid; BORDER-LEFT: #cccccc 1px solid; BORDER-BOTTOM: #cccccc 1px solid
+}
+BODY.dark {
+	BACKGROUND-COLOR: #bbd0bb
+}
+TABLE {
+	FONT-SIZE: 12px
+}
+TH {
+	FONT-SIZE: 12px
+}
+TD {
+	FONT-SIZE: 12px
+}
+P {
+	FONT-SIZE: 12px
+}
+INPUT {
+	FONT-SIZE: 12px
+}
+TEXTAREA {
+	FONT-SIZE: 12px
+}
+SELECT {
+	FONT-SIZE: 12px
+}
+TABLE.dark {
+	BACKGROUND-COLOR: #bbd0bb
+}
+TD.default {
+	BACKGROUND-COLOR: #f6f6f6
+}
+INPUT.default {
+	BORDER-RIGHT: #000000 1px solid; BORDER-TOP: #000000 1px solid; BORDER-LEFT: #000000 1px solid; BORDER-BOTTOM: #000000 1px solid; BACKGROUND-COLOR: #f0f0ff
+}
+INPUT.readonly {
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; BORDER-LEFT: 0px; BORDER-BOTTOM: 0px; BACKGROUND-COLOR: #f0f0ff
+}
+INPUT.button {
+	FONT-SIZE: 12px; HEIGHT: 19px; TEXT-ALIGN: center
+}
+HR.default {
+	COLOR: #008000
+}
+FONT.c30 {
+	COLOR: #000000
+}
+FONT.c31 {
+	COLOR: #e00000
+}
+FONT.c32 {
+	COLOR: #008000
+}
+FONT.c33 {
+	COLOR: #808000
+}
+FONT.c34 {
+	COLOR: #0000ff
+}
+FONT.c35 {
+	COLOR: #d000d0
+}
+FONT.c36 {
+	COLOR: #33a0a0
+}
+FONT.c37 {
+	COLOR: #000000
+}
+.MenuLeftHead {
+	FONT-SIZE: 12px; VERTICAL-ALIGN: bottom; COLOR: #000000; TEXT-ALIGN: left; TEXT-DECORATION: none
+}
+.MainContentHeaderInfo {
+	FONT-SIZE: 12px; COLOR: #009900
+}
+.MainContentTitle {
+	FONT-WEIGHT: bold; FONT-SIZE: 16px
+}
+.MainContentText {
+	FONT-SIZE: 12px; COLOR: #333333
+}
+.MainContentTJTitle {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: #666666
+}
+.MainContentTextTitle {
+	FONT-SIZE: 12px; COLOR: #000000
+}
+.unnamed2 {
+	BACKGROUND-COLOR: #ffffcc
+}
+.Account {
+	FONT-SIZE: 12px; COLOR: #0477b8
+}
+.NavigatorText {
+	FONT-WEIGHT: normal; FONT-SIZE: 12px; COLOR: #0477b8; TEXT-DECORATION: none
+}
+.WelcomeTextNav {
+	FONT-SIZE: 12px; COLOR: #999999; TEXT-DECORATION: none
+}
+.CoyprightText {
+	FONT-SIZE: 12px
+}
+.mainright1 {
+	COLOR: #6e9e54
+}
+.mainright {
+	COLOR: #6e9e54
+}
+TD.header {
+	FONT-SIZE: 12px; COLOR: #ffffff; BACKGROUND-COLOR: #0066cc
+}
+.header A:link {
+	FONT-SIZE: 12px; COLOR: #ffffff; BACKGROUND-COLOR: #0066cc; TEXT-DECORATION: none
+}
+.header A:visited {
+	FONT-SIZE: 12px; COLOR: #ffffff; BACKGROUND-COLOR: #0066cc; TEXT-DECORATION: none
+}
+.header A:hover {
+	FONT-SIZE: 12px; COLOR: #0066cc; BACKGROUND-COLOR: #ffffff; TEXT-DECORATION: none
+}
+INPUT.text {
+	BORDER-RIGHT: 1px solid; BORDER-TOP: 1px solid; FONT-SIZE: 12px; BORDER-LEFT: 1px solid; BORDER-BOTTOM: 1px solid; HEIGHT: 19px
+}
+TD.title {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 12px; PADDING-BOTTOM: 0px; MARGIN: 0px; COLOR: #ffffff; PADDING-TOP: 0px; HEIGHT: 16px
+}
+TABLE.title {
+	BORDER-RIGHT: #0066cc 1px solid; PADDING-RIGHT: 0px; BORDER-TOP: #0066cc 1px solid; PADDING-LEFT: 0px; FONT-SIZE: 12px; PADDING-BOTTOM: 0px; MARGIN: 0px; BORDER-LEFT: #0066cc 1px solid; COLOR: #ffffff; PADDING-TOP: 0px; BORDER-BOTTOM: #0066cc 1px solid; HEIGHT: 18px
+}
+TABLE.helper {
+	BORDER-RIGHT: #0066cc 1px solid; BORDER-TOP: #0066cc 1px solid; FONT-SIZE: 12px; BORDER-LEFT: #0066cc 1px solid; COLOR: #ffffff; BORDER-BOTTOM: #0066cc 1px solid
+}
+TABLE.helpert {
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; FONT-SIZE: 12px; BORDER-LEFT: 0px; COLOR: #ffffff; BORDER-BOTTOM: 0px
+}
+TD.smth {
+	FONT-SIZE: 12px
+}
+LI.default {
+	MARGIN-BOTTOM: 5px; VERTICAL-ALIGN: top
+}
+A:link {
+	COLOR: #000000; TEXT-DECORATION: none
+}
+A:visited {
+	COLOR: #101010; TEXT-DECORATION: none
+}
+A:hover {
+	COLOR: #005ee4; TEXT-DECORATION: underline
+}
+A.nochange:link {
+	COLOR: #000000; TEXT-DECORATION: none
+}
+A.nochange:visited {
+	COLOR: #000000; TEXT-DECORATION: none
+}
+A.nochange:hover {
+	COLOR: #0000ff; TEXT-DECORATION: underline
+}
+A.changelittle:link {
+	COLOR: #000000; TEXT-DECORATION: none
+}
+A.changelittle:visited {
+	COLOR: #555555; TEXT-DECORATION: none
+}
+A.changelittle:hover {
+	COLOR: #0000ff; TEXT-DECORATION: underline
+}
+A.boardtitle:link {
+	COLOR: #003e71; TEXT-DECORATION: none
+}
+A.boardtitle:visited {
+	COLOR: #003e71; TEXT-DECORATION: none
+}
+A.boardtitle:hover {
+	COLOR: #000022; TEXT-DECORATION: none
+}
+.chara2 {
+	FONT-SIZE: 12px; WORD-BREAK: break-all
+}
+.hot {
+	FONT-SIZE: 12px; WORD-BREAK: break-all; LINE-HEIGHT: 20px
+}

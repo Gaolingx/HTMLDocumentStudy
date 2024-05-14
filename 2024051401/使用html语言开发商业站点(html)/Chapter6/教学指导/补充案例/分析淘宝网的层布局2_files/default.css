@@ -1,0 +1,408 @@
+BODY {
+	FONT-SIZE: 12px; COLOR: #777777; FONT-FAMILY: "宋体",Verdana, Arial, Verdana, sans-serif
+}
+P {
+	FONT-SIZE: 12px; COLOR: #777777; FONT-FAMILY: "宋体",Verdana, Arial, Verdana, sans-serif
+}
+TH {
+	FONT-SIZE: 12px; COLOR: #777777; FONT-FAMILY: "宋体",Verdana, Arial, Verdana, sans-serif
+}
+TD {
+	FONT-SIZE: 12px; COLOR: #777777; FONT-FAMILY: "宋体",Verdana, Arial, Verdana, sans-serif
+}
+INPUT {
+	FONT-SIZE: 12px; COLOR: #777777; FONT-FAMILY: "宋体",Verdana, Arial, Verdana, sans-serif
+}
+SELECT {
+	FONT-SIZE: 12px; COLOR: #777777; FONT-FAMILY: "宋体",Verdana, Arial, Verdana, sans-serif
+}
+TEXTAREA {
+	FONT-SIZE: 12px; COLOR: #777777; FONT-FAMILY: "宋体",Verdana, Arial, Verdana, sans-serif
+}
+BODY {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 12px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px; BACKGROUND-COLOR: #2a78b9; TEXT-ALIGN: center
+}
+FORM {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+DIV {
+	WORD-WRAP: break-word
+}
+UL {
+	FONT-SIZE: 12px; COLOR: #777777; FONT-FAMILY: Arial, Verdana, sans-serif; LIST-STYLE-TYPE: none
+}
+TABLE {
+	TEXT-ALIGN: left
+}
+P {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; PADDING-BOTTOM: 0px; MARGIN: 15px 0px; PADDING-TOP: 0px
+}
+HR {
+	BORDER-RIGHT: #000000 0px solid; BORDER-TOP: #000000 1px solid; BORDER-LEFT: #000000 0px solid; BORDER-BOTTOM: #000000 0px solid; HEIGHT: 1px
+}
+HR.1px {
+	BORDER-RIGHT: #000000 0px solid; BORDER-TOP: #a5bee1 1px solid; BORDER-LEFT: #000000 0px solid; BORDER-BOTTOM: #000000 0px solid; HEIGHT: 1px
+}
+IMG {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px
+}
+IMG.line {
+	BORDER-RIGHT: #dedede 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: #dedede 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; BORDER-LEFT: #dedede 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: #dedede 1px solid
+}
+.HackBox {
+	CLEAR: both; BORDER-TOP: transparent 0px solid
+}
+.Hidden {
+	DISPLAY: none
+}
+A:link {
+	COLOR: #ff0000; TEXT-DECORATION: none
+}
+A:visited {
+	COLOR: #ff0000; TEXT-DECORATION: none
+}
+A:hover {
+	COLOR: #008200; TEXT-DECORATION: underline
+}
+A:active {
+	COLOR: #008200; TEXT-DECORATION: underline
+}
+#Top {
+	CLEAR: both; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 12px auto 0px; WIDTH: 760px; PADDING-TOP: 0px
+}
+#Nav {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BACKGROUND: url(../images/nav_back.gif) no-repeat left bottom; PADDING-BOTTOM: 0px; MARGIN: 0px auto; PADDING-TOP: 0px; HEIGHT: 39px
+}
+#Nav UL {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 8px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px; LIST-STYLE-TYPE: none
+}
+#Nav LI {
+	PADDING-RIGHT: 4px; PADDING-LEFT: 5px; BACKGROUND: url(../images/nav_split.gif) no-repeat right center; FLOAT: left; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+#Nav LI .NoneSplit {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FLOAT: left; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+#Nav A {
+	FLOAT: left; LINE-HEIGHT: 39px; HEIGHT: 39px
+}
+#TopBack {
+	CLEAR: both; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BACKGROUND: url(../images/body_top_bk.gif) no-repeat left top; PADDING-BOTTOM: 0px; MARGIN: 15px auto 0px; WIDTH: 751px; PADDING-TOP: 0px; HEIGHT: 22px
+}
+#Main {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px auto; WIDTH: 751px; PADDING-TOP: 0px; BACKGROUND-COLOR: #ffffff
+}
+#Right {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FLOAT: right; PADDING-BOTTOM: 0px; MARGIN: 0px; WIDTH: 550px; PADDING-TOP: 0px
+}
+#PhotoList {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FLOAT: left; PADDING-BOTTOM: 0px; MARGIN: 0px auto; WIDTH: 100%; PADDING-TOP: 0px
+}
+DIV.ListPhoto {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FLOAT: left; PADDING-BOTTOM: 0px; MARGIN: 0px; WIDTH: 100%; PADDING-TOP: 0px
+}
+DIV.ListPhoto H2 {
+	DISPLAY: block; FONT-WEIGHT: bold; FONT-SIZE: 12px; FLOAT: left; WIDTH: 100%; COLOR: #008200; TEXT-ALIGN: left
+}
+DIV.ListPhoto H2 A:link {
+	FONT-WEIGHT: bold; COLOR: #008200; TEXT-DECORATION: underline
+}
+DIV.ListPhoto H2 A:visited {
+	FONT-WEIGHT: bold; COLOR: #008200; TEXT-DECORATION: underline
+}
+DIV.ListPhoto H2 A:hover {
+	FONT-WEIGHT: bold; COLOR: #ff6699; TEXT-DECORATION: none
+}
+DIV.ListPhoto H2 A:active {
+	FONT-WEIGHT: bold; COLOR: #ff6699; TEXT-DECORATION: none
+}
+DIV.ListPhoto UL {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px; LIST-STYLE-TYPE: none; TEXT-ALIGN: center
+}
+DIV.ListPhoto LI {
+	FLOAT: left; OVERFLOW: hidden; WIDTH: 120px; HEIGHT: 120px
+}
+#ViewPhoto {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FLOAT: left; PADDING-BOTTOM: 0px; MARGIN: 0px auto; WIDTH: 100%; PADDING-TOP: 0px; TEXT-ALIGN: left
+}
+#ViewPhoto UL {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px; LIST-STYLE-TYPE: none
+}
+#ViewPhoto LI {
+	DISPLAY: block; FLOAT: left; MARGIN: 5px 0px; WIDTH: 100%
+}
+#ViewPhoto H1 {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-WEIGHT: bold; FONT-SIZE: 16px; FLOAT: left; PADDING-BOTTOM: 0px; MARGIN: 0px; WIDTH: 100%; COLOR: #777777; LINE-HEIGHT: 20px; PADDING-TOP: 0px; HEIGHT: 20px
+}
+#NewList {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FLOAT: left; PADDING-BOTTOM: 0px; MARGIN: 0px; WIDTH: 100%; PADDING-TOP: 0px; TEXT-ALIGN: left
+}
+#NewList UL {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px; LIST-STYLE-TYPE: none
+}
+#Left {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FLOAT: left; PADDING-BOTTOM: 0px; MARGIN: 0px; WIDTH: 200px; PADDING-TOP: 0px; TEXT-ALIGN: left
+}
+#Main #Left #Note {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FLOAT: left; PADDING-BOTTOM: 0px; MARGIN: 0px auto; WIDTH: 196px; PADDING-TOP: 0px; TEXT-ALIGN: center
+}
+#Main #Left #Note UL {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-WEIGHT: bold; FONT-SIZE: 14px; PADDING-BOTTOM: 0px; MARGIN: 0px auto; COLOR: #ff0000; PADDING-TOP: 0px; TEXT-ALIGN: center
+}
+#Mark {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FLOAT: left; PADDING-BOTTOM: 0px; MARGIN: 0px auto; WIDTH: 196px; PADDING-TOP: 0px; TEXT-ALIGN: center
+}
+#Main #Left #BlogSorts {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FLOAT: left; PADDING-BOTTOM: 0px; MARGIN: 0px auto; WIDTH: 196px; PADDING-TOP: 0px
+}
+#Main #Left H1 {
+	FONT-WEIGHT: bold; FONT-SIZE: 16px; COLOR: #777777; TEXT-ALIGN: center
+}
+#Main #Left UL {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px 0px 0px 10px; PADDING-TOP: 0px; LIST-STYLE-TYPE: none
+}
+#Main #Left LI {
+	DISPLAY: block; FLOAT: left; WIDTH: 100%
+}
+#Main #Left #AlbumSorts {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FLOAT: left; PADDING-BOTTOM: 0px; MARGIN: 0px auto; WIDTH: 196px; PADDING-TOP: 0px
+}
+#Main #Left #FriendlyLink {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FLOAT: left; PADDING-BOTTOM: 0px; MARGIN: 0px auto; WIDTH: 196px; PADDING-TOP: 0px
+}
+#Main #Left #Calendar {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FLOAT: left; PADDING-BOTTOM: 0px; MARGIN: 0px auto; WIDTH: 196px; PADDING-TOP: 0px
+}
+#BottomBack {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BACKGROUND: url(../images/body_bottom_bk.gif) no-repeat left top; PADDING-BOTTOM: 0px; MARGIN: 0px auto; WIDTH: 751px; PADDING-TOP: 0px; HEIGHT: 10px
+}
+.ViewBlogs {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FLOAT: left; PADDING-BOTTOM: 5px; MARGIN: 0px auto 5px; OVERFLOW: hidden; WIDTH: 100%; WORD-BREAK: break-all; PADDING-TOP: 0px; BORDER-BOTTOM: #dedede 1px solid; TEXT-ALIGN: left; WORD-WRAP: break-word
+}
+.ViewBlogs UL {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px 0px 10px; PADDING-TOP: 0px; LIST-STYLE-TYPE: none
+}
+.ViewBlogs LI {
+	FLOAT: left; WIDTH: 100%
+}
+LI.line {
+	DISPLAY: block; FLOAT: left; WIDTH: 100%; BORDER-BOTTOM: #2a78b9 1px solid; HEIGHT: 10px
+}
+#ViewBlog {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FLOAT: left; PADDING-BOTTOM: 0px; MARGIN: 0px; OVERFLOW: hidden; PADDING-TOP: 0px; TEXT-ALIGN: left
+}
+#ViewBlog H1 {
+	FONT-WEIGHT: bold; FONT-SIZE: 16px; LINE-HEIGHT: 25px; HEIGHT: 25px
+}
+#ViewBlog UL {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px 5px; PADDING-TOP: 0px; LIST-STYLE-TYPE: none
+}
+#ViewBlog LI {
+	FLOAT: left; WIDTH: 100%
+}
+#ViewBlog P {
+	TEXT-INDENT: 18pt
+}
+#ViewBlog IMG {
+	OVERFLOW: hidden
+}
+#BlogPath {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FLOAT: left; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px; TEXT-ALIGN: left
+}
+#BlogPath UL {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+#BlogPath LI {
+	FLOAT: left; WIDTH: 100%
+}
+DIV.Commend {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FLOAT: left; PADDING-BOTTOM: 0px; MARGIN: 0px; WIDTH: 100%; PADDING-TOP: 0px; TEXT-ALIGN: left
+}
+DIV.Commend UL {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px; LIST-STYLE-TYPE: none
+}
+DIV.Works {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 5px auto; PADDING-TOP: 0px; BORDER-BOTTOM: #dedede 1px solid; TEXT-ALIGN: left
+}
+DIV.Works .WorksImage {
+	FLOAT: left; OVERFLOW: hidden; WIDTH: 120px
+}
+DIV.Works .WorksImage UL {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px; LIST-STYLE-TYPE: none
+}
+DIV.Works .WorksImage LI {
+	DISPLAY: block; FLOAT: left; WIDTH: 100%
+}
+DIV.Works .WorksMain {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FLOAT: right; PADDING-BOTTOM: 0px; MARGIN: 0px; OVERFLOW: hidden; WIDTH: 420px; PADDING-TOP: 0px
+}
+DIV.Works .WorksMain UL {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+DIV.Works .WorksMain LI {
+	FLOAT: left
+}
+DIV.Works .WorksMain LI.Left {
+	FLOAT: left; WIDTH: 18%
+}
+DIV.Works .WorksMain LI.WorksDescription {
+	FLOAT: left; WIDTH: 80%
+}
+#LeaveWords {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FLOAT: left; PADDING-BOTTOM: 0px; MARGIN: 0px; WIDTH: 100%; PADDING-TOP: 0px; TEXT-ALIGN: left
+}
+#LeaveWords UL {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+#LeaveWords UL LI {
+	PADDING-RIGHT: 0px; DISPLAY: block; PADDING-LEFT: 0px; FLOAT: left; PADDING-BOTTOM: 0px; MARGIN: 0px; WIDTH: 100%; PADDING-TOP: 0px
+}
+#Pages {
+	FLOAT: left; LINE-HEIGHT: 16px; HEIGHT: 16px; TEXT-ALIGN: right
+}
+LI.Title {
+	FONT-WEIGHT: bold; FONT-SIZE: 16px; FLOAT: left; MARGIN: 5px 0px; COLOR: #777777; LINE-HEIGHT: 20px; HEIGHT: 20px; TEXT-ALIGN: center
+}
+DIV #Soho {
+	FLOAT: left; MARGIN: 10px 5px; WIDTH: 180px
+}
+#TuiJian {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FLOAT: left; PADDING-BOTTOM: 0px; MARGIN: 0px auto; WIDTH: 100%; PADDING-TOP: 0px
+}
+#TuiJian .tuijian {
+	FLOAT: left; MARGIN: 10px 0px 0px 10px; OVERFLOW: hidden; TEXT-ALIGN: left
+}
+#TuiJian .tuijian UL {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px; LIST-STYLE-TYPE: none
+}
+#MyCalendar {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px auto; WIDTH: 100%; PADDING-TOP: 0px; TEXT-ALIGN: center
+}
+#MyCalendar UL {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px; LIST-STYLE-TYPE: none
+}
+#MyCalendar #M {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FLOAT: left; PADDING-BOTTOM: 0px; MARGIN: 0px; WIDTH: 100%; PADDING-TOP: 0px; TEXT-ALIGN: center
+}
+#MyCalendar #M UL {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+#MyCalendar #M LI {
+	PADDING-RIGHT: 0px; DISPLAY: block; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; WIDTH: 100%; PADDING-TOP: 0px
+}
+#MyCalendar #D {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; WIDTH: 185px; PADDING-TOP: 0px
+}
+#MyCalendar #D UL {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px; LIST-STYLE-TYPE: none
+}
+#MyCalendar #D LI {
+	FLOAT: left; WIDTH: 26px; LINE-HEIGHT: 26px; HEIGHT: 26px
+}
+#MyCalendar #D LI.bg_today {
+	BACKGROUND: url(../images/bg_today.gif) no-repeat center center
+}
+#GuiDang {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px auto; WIDTH: 100%; PADDING-TOP: 0px
+}
+#GuiDang UL {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px; LIST-STYLE-TYPE: none
+}
+#GuiDang A:link {
+	COLOR: #777777; TEXT-DECORATION: none
+}
+#GuiDang A:visited {
+	COLOR: #777777; TEXT-DECORATION: none
+}
+#GuiDang A:hover {
+	COLOR: #ff0000; TEXT-DECORATION: none
+}
+#GuiDang A:active {
+	COLOR: #ff0000; TEXT-DECORATION: none
+}
+#Bottom {
+	CLEAR: both; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BACKGROUND: url(../images/nav_back.gif) no-repeat left bottom; PADDING-BOTTOM: 0px; MARGIN: 15px auto 0px; WIDTH: 760px; LINE-HEIGHT: 39px; PADDING-TOP: 0px; HEIGHT: 39px
+}
+#Resume {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px auto; WIDTH: 90%; PADDING-TOP: 0px
+}
+#Resume H1 {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-WEIGHT: bold; FONT-SIZE: 16px; PADDING-BOTTOM: 0px; MARGIN: 0px; WIDTH: 100%; COLOR: #777777; LINE-HEIGHT: 20px; PADDING-TOP: 0px; HEIGHT: 20px; TEXT-ALIGN: center
+}
+#Resume H2 {
+	DISPLAY: block; PADDING-LEFT: 20px; FONT-SIZE: 12px; FLOAT: left; WIDTH: 100%; COLOR: #000000; LINE-HEIGHT: 30px; HEIGHT: 30px; BACKGROUND-COLOR: #a5bee1; TEXT-ALIGN: left
+}
+#Resume .BodyDescription {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FLOAT: left; PADDING-BOTTOM: 0px; MARGIN: 0px; WIDTH: 100%; PADDING-TOP: 0px; TEXT-ALIGN: left
+}
+#Resume .BodyDescription UL {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+#Resume .BodyDescription LI {
+	FLOAT: left; LINE-HEIGHT: 20px
+}
+#Resume .BodyDescription LI.ResumeTitle {
+	WIDTH: 15%; TEXT-ALIGN: justify
+}
+#Resume .BodyDescription LI.Description {
+	WIDTH: 35%; TEXT-ALIGN: left
+}
+#Resume .BodyDescription LI.Description8 {
+	WIDTH: 85%; TEXT-ALIGN: left
+}
+#Copyright {
+	CLEAR: both; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 10px auto 0px; WIDTH: 760px; PADDING-TOP: 0px
+}
+#Copyright UL {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px; LIST-STYLE-TYPE: none
+}
+#Copyright LI {
+	DISPLAY: block; COLOR: #ffffff
+}
+#Copyright LI A {
+	COLOR: #ffffff
+}
+#Copyright LI A:link {
+	COLOR: #ffffff; TEXT-DECORATION: none
+}
+#Copyright LI A:visited {
+	COLOR: #ffffff; TEXT-DECORATION: none
+}
+#Copyright LI A:hover {
+	COLOR: #ffffff; TEXT-DECORATION: none
+}
+#Copyright LI A:active {
+	COLOR: #ffffff; TEXT-DECORATION: none
+}
+#Stats {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px auto; WIDTH: 760px; PADDING-TOP: 0px
+}
+#Stats A {
+	COLOR: #ffffff
+}
+.guestbookcontent {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 8px auto; PADDING-TOP: 0px; TEXT-ALIGN: left
+}
+.guestbookcontent UL {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px; LIST-STYLE-TYPE: none
+}
+.guestbookcontent LI {
+	FLOAT: left; WIDTH: 90%
+}
+.guestbookcontent LI.time {
+	PADDING-LEFT: 18px; BACKGROUND: url(../images/time.png) no-repeat 0px 50%
+}
+.guestbookcontent LI.user {
+	PADDING-LEFT: 18px; FONT-WEIGHT: bold; FONT-SIZE: 14px; BACKGROUND: url(../images/user.gif) no-repeat 0px 50%
+}
+.guestbookreplycontent {
+	BORDER-RIGHT: #dedede 1px solid; PADDING-RIGHT: 0px; BORDER-TOP: #dedede 1px solid; PADDING-LEFT: 0px; FLOAT: left; PADDING-BOTTOM: 0px; MARGIN: 0px 0px 10px 10px; BORDER-LEFT: #dedede 1px solid; WIDTH: 100%; PADDING-TOP: 0px; BORDER-BOTTOM: #dedede 1px solid
+}
+.guestbookreplycontent UL {
+	PADDING-RIGHT: 3px; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; MARGIN: 0px; PADDING-TOP: 3px; LIST-STYLE-TYPE: none
+}
+DIV#successmsg {
+	BORDER-RIGHT: #dedede 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: #dedede 1px solid; PADDING-LEFT: 5px; BACKGROUND: #fff5d8; PADDING-BOTTOM: 5px; BORDER-LEFT: #dedede 1px solid; WIDTH: 90%; PADDING-TOP: 5px; BORDER-BOTTOM: #dedede 1px solid
+}
+SPAN .R {
+	COLOR: #000000
+}

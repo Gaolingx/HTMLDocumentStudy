@@ -1,0 +1,15 @@
+TD {font-size:12px;}
+.article-content{
+	padding:0;
+	 margin:0; 
+	 text-align:left; 
+	 line-height:18px; 
+	 list-style-position:inside; 
+	 margin-left:20px; 
+	 margin-top:10px;
+}
+a{
+	color:#0E69C7; text-decoration:none;
+}
+a:hover{text-decoration:underline; color:#FF6633}
+
