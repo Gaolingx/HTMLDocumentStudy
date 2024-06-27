@@ -1,0 +1,103 @@
+<!-- Designed by Archeb https://qwq.moe/ -->
+<!-- 使用此 UI 必须经过 Archeb & FENGberd 授权 -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <title>Nyatwork OpenID - 注册</title>
+
+    <link type="text/css" rel="stylesheet" href="./css/base.min.css" />
+    <link type="text/css" rel="stylesheet" href="./css/notify.min.css" />
+
+    <style type="text/css">
+        #code {
+            text-transform: uppercase;
+        }
+
+        .actions .btn {
+            width: 130px;
+        }
+
+        #app label {
+            width: 50px;
+        }
+
+        .image-container {
+            width: 150%;
+            /* 或者其他你想要的宽度 */
+            height: 150%;
+            /* 或者其他你想要的高度 */
+        }
+
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app" class="login">
+        <div class="single-bg">
+            <div class="image-container">
+                <img src="./image/loginBG.png" alt="描述文字">
+              </div>
+        </div>
+        <div class="notify-container"></div>
+        <div class="main padding-limiter">
+            <div class="panel">
+                <div class="double-column">
+                    <img class="panel-wide login-img" src="./image/login.jpg">
+                    <div class="panel-narrow">
+                        <div class="title">
+                            Nyatwork 注册
+                        </div>
+                        <div class="control-group">
+                            <label>邮　箱</label>
+                            <div class="controls">
+                                <input id="mail" type="text" placeholder="仅支持主流邮箱" title="邮箱">
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <label>验证码</label>
+                            <div class="controls">
+                                <input id="code" type="text" placeholder="邮件验证码" maxlength="6" title="验证码">
+                                <button class="btn btn-code" id="send">获取</button>
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <label>用户名</label>
+                            <div class="controls">
+                                <input id="username" type="text" placeholder="4~20 位字母数字下划线" maxlength="20" title="用户名">
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <label>密　码</label>
+                            <div class="controls">
+                                <input id="password" type="password" placeholder="8~128 位" maxlength="128" title="密码">
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <label style="width: 100%;">
+                                * 在 OpenID 注册代表您已阅读并同意 Nyatwork 及附属站点 (SakuraFrp) 的
+                                <a href="https://www.natfrp.com/policy/privacy">隐私策略</a>、
+                                <a href="https://www.natfrp.com/policy/tos">服务条款</a>
+                            </label>
+                        </div>
+                        <div class="actions">
+                            <button class="btn btn-green" id="register">注册</button>
+                            <button class="btn" onclick="window.location='./Index_Main.html'" id="back">返回</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
